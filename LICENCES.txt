@@ -1,0 +1,7 @@
+Bibliothèques libres utilisées par Finora (hébergées ici pour qu'aucune donnée ne parte vers un autre site) :
+
+- PDF.js 3.11.174 — Mozilla Foundation — licence Apache 2.0 — https://github.com/mozilla/pdf.js
+- SheetJS Community Edition 0.18.5 — SheetJS LLC — licence Apache 2.0 — https://sheetjs.com
+- Tesseract.js 5.1.1 et tesseract.js-core 5.1.1 — licence Apache 2.0 — https://github.com/naptha/tesseract.js
+- Données de langue française Tesseract (4.0.0_best_int) — licence Apache 2.0 — https://github.com/tesseract-ocr/tessdata
+- supabase-js 2.45.4 — Supabase — licence MIT — https://github.com/supabase/supabase-js

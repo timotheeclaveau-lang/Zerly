@@ -1,0 +1,13 @@
+# Zerly
+
+> Application web de suivi de budget personnel (français). Sans publicité, sans cookie. Compte (adresse mail, Google ou Apple) avec sauvegarde automatique des données, utilisable aussi hors connexion.
+
+Fonctions : comptes bancaires, dépenses, rémunérations, transferts, placements, factures (photo ou PDF, lecture automatique sur l'appareil), analyses mois par mois, sauvegarde et export Excel, fonctionnement hors connexion.
+
+## Pages
+- [Application](./index.html)
+- [Politique de confidentialité](./confidentialite.html)
+- [Cookies et stockage](./cookies.html)
+- [Conditions d'utilisation](./conditions.html)
+- [Mentions légales](./mentions-legales.html)
+- [Accessibilité](./accessibilite.html)
