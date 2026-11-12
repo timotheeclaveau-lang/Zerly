@@ -1162,6 +1162,10 @@ html[data-theme="light"] .sh-bal.pos b{color:var(--pos)}html[data-theme="light"]
 .pd-promo{display:flex;align-items:center;gap:10px;height:52px;padding:0 6px 0 16px;border-radius:15px;background:var(--card);box-shadow:var(--card-shadow)}
 .pd-promo input{flex:1;min-width:0;border:0;outline:0;background:none;font-size:16.5px;font-weight:650;letter-spacing:.5px;color:var(--text)}
 .pd-promo input::placeholder{font-weight:400;letter-spacing:0;color:var(--text3)}
+.pd-test{margin:26px 0 4px;text-align:center}.pd-test summary{display:inline-block;list-style:none;font-size:13px;color:var(--text3);cursor:pointer;padding:6px 10px}.pd-test summary::-webkit-details-marker{display:none}
+.pd-tc{display:flex;gap:8px;margin-top:8px}.pd-tc input{flex:1;min-width:0;height:44px;padding:0 14px;border:0;border-radius:12px;background:var(--fill);color:var(--text);font:600 17px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:3px;text-align:center;outline:0}
+.pd-tc input::placeholder{color:var(--text3);letter-spacing:3px}.pd-tc button{flex:none;height:44px;padding:0 16px;border-radius:12px;background:var(--ink);color:var(--on-ink);font-size:14.5px;font-weight:650}.pd-tc button:disabled{opacity:.35}
+.pd-test small{display:block;margin-top:8px;font-size:12px;color:var(--text3)}.pd-test small a{color:inherit}
 .pd-promo-t{display:inline-flex;align-items:center;gap:4px;font-size:12.5px;color:var(--text3);padding-right:10px}.pd-promo-t svg{width:13px;height:13px}
 
 
@@ -1435,7 +1439,7 @@ html.booting #app{opacity:0}
 /* ================= données ================= */
 const SEED=/*SEED*/null;
 const KEY="finora.v2";
-const VERSION="9.2.3";
+const VERSION="9.2.4";
 const TYPES={dep:{l:"Dépense",s:-1},rem:{l:"Rémunération",s:1},tro:{l:"Transfert envoyé",s:-1},tri:{l:"Transfert reçu",s:1},plo:{l:"Placement envoyé",s:-1},pli:{l:"Placement récupéré",s:1}};
 const TYPE_FROM_LABEL={"Dépense":"dep","Rémunération":"rem","Transfert envoyé":"tro","Transfert reçu":"tri","Placement envoyé":"plo","Placement récupéré":"pli"};
 const KIND_OF={dep:"dep",rem:"rem",tro:"tr",tri:"tr",plo:"pl",pli:"pl"};
@@ -4564,28 +4568,31 @@ function openPlanDetail(k,yearly,need,done){
       <div class="card tx-l pd-gap"><div class="tx">${icon("check")}<div class="tx-b"><b>Sans engagement</b><small>Résilie quand tu veux depuis Paramètres → Mon offre.</small></div></div></div>
       <div class="sec">Paiement sécurisé</div>
       <div class="card tx-l"><div class="tx">${icon("lock")}<div class="tx-b"><b>Carte, Apple Pay, Google Pay, PayPal ou prélèvement</b><small>Sur la page sécurisée de Stripe : Zerly ne voit jamais ta carte. Ta banque peut te demander de confirmer dans son appli. Reçu envoyé par mail.</small></div></div></div>
-      <div class="sec">Code promo</div>
+      ${PAY_ON?`<div class="sec">Code promo</div>
       <div class="pd-promo"><input id="pdPromo" value="${esc(S.promo||"")}" placeholder="Ex : ZERLY10" autocapitalize="characters" autocomplete="off" spellcheck="false"><span class="pd-promo-t">${S.promo?icon("check")+"Sera appliqué au paiement":"Facultatif"}</span></div>
-      ${PAY_ON?"":`<div class="sec">Code test</div>
-      <div class="pd-promo"><input id="pdCode" value="${esc(keepCode)}" placeholder="8 caractères" maxlength="8" autocapitalize="characters" autocomplete="off" spellcheck="false"><span class="pd-promo-t" id="pdCodeT">Pour tester avant l'ouverture des paiements</span></div>`}
-      <label class="au-cgu" style="margin-top:16px"><input type="checkbox" id="pdCgv" ${keepCgv?"checked":""}><span>J'accepte les <a href="conditions.html" target="_blank" rel="noopener">conditions d'utilisation</a>${PAY_ON?` et les <a href="cgv.html" target="_blank" rel="noopener">conditions de vente</a>`:""} et je demande que l'offre démarre tout de suite.</span></label>
-      ${PAY_ON?`<p class="pd-legal">Rétractation possible sous 14 jours, au prorata de l'utilisation.</p>`:""}
-      <button class="primary" id="pdPay" disabled>${icon("lock")}${PAY_ON?(trial?"Commencer l'essai gratuit":`Payer ${price.toFixed(2).replace(".",",")} €`):"Activer avec mon code test"}</button>
-      <p class="hint">${PAY_ON?(cloudOn()?"Paiement sécurisé par Stripe":"Connecte-toi à ton compte Zerly pour t'abonner"):cloudOn()?"Les paiements ouvrent bientôt. En attendant, un code test débloque l'offre sur ton compte.":"Connecte-toi à ton compte Zerly pour utiliser un code test."}</p>`;
-    const code=el.querySelector("#pdCode");
-    const chk=()=>{el.querySelector("#pdPay").disabled=!(el.querySelector("#pdCgv").checked&&cloudOn()&&(PAY_ON||(code&&code.value.length===8)))};
-    el.querySelector("#pdCgv").onchange=chk;
-    if(code)code.oninput=()=>{code.value=code.value.toUpperCase().replace(/[^A-Z0-9]/g,"").slice(0,8);el.querySelector("#pdCodeT").textContent=code.value.length===8?"Prêt à être vérifié":"Pour tester avant l'ouverture des paiements";chk()};
-    chk();
-    const pr=el.querySelector("#pdPromo");pr.oninput=()=>{pr.value=pr.value.toUpperCase().replace(/[^A-Z0-9_-]/g,"").slice(0,30);S.promo=pr.value;saveLocal();el.querySelector(".pd-promo-t").innerHTML=pr.value?"Sera vérifié au paiement":"Facultatif"};
+      <label class="au-cgu" style="margin-top:16px"><input type="checkbox" id="pdCgv" ${keepCgv?"checked":""}><span>J'accepte les <a href="conditions.html" target="_blank" rel="noopener">conditions d'utilisation</a> et les <a href="cgv.html" target="_blank" rel="noopener">conditions de vente</a> et je demande que l'offre démarre tout de suite.</span></label>
+      <p class="pd-legal">Rétractation possible sous 14 jours, au prorata de l'utilisation.</p>
+      <button class="primary" id="pdPay" disabled>${icon("lock")}${trial?"Commencer l'essai gratuit":`Payer ${price.toFixed(2).replace(".",",")} €`}</button>
+      <p class="hint">${cloudOn()?"Paiement sécurisé par Stripe":"Connecte-toi à ton compte Zerly pour t'abonner"}</p>`
+      :`<button class="primary" disabled style="margin-top:18px">Bientôt disponible</button><p class="hint">Les paiements ouvrent bientôt.</p>
+      <details class="pd-test" ${keepCode?"open":""}><summary>J'ai un code test</summary>
+        ${cloudOn()?`<div class="pd-tc"><input id="pdCode" value="${esc(keepCode)}" placeholder="XXXXXXXX" maxlength="8" autocapitalize="characters" autocomplete="off" spellcheck="false" inputmode="text"><button id="pdCodeGo" disabled>Activer</button></div>
+        <small>En activant, tu acceptes les <a href="conditions.html" target="_blank" rel="noopener">conditions d'utilisation</a>.</small>`:`<small>Connecte-toi d'abord à ton compte Zerly (Réglages → Se connecter).</small>`}</details>`}`;
     el.querySelector("#pdPer").onclick=e=>{const b=e.target.closest("[data-p]");if(!b)return;y=b.dataset.p==="y";draw(w,close)};
-    el.querySelector("#pdPay").onclick=async()=>{const b=el.querySelector("#pdPay");b.disabled=true;
-      if(!PAY_ON){b.innerHTML=`<span class="spin"></span>Vérification…`;
+    const code=el.querySelector("#pdCode"),go=el.querySelector("#pdCodeGo");
+    if(code){code.oninput=()=>{code.value=code.value.toUpperCase().replace(/[^A-Z0-9]/g,"").slice(0,8);go.disabled=code.value.length!==8};code.oninput();
+      code.onkeydown=e=>{if(e.key==="Enter"&&!go.disabled)go.click()};
+      go.onclick=async()=>{go.disabled=true;go.innerHTML=`<span class="spin"></span>`;
         const r=await SB.rpc("redeem_test_code",{p_code:code.value});
-        if(r.error||!r.data){b.innerHTML=`${icon("lock")}Activer avec mon code test`;chk();
-          toast(r.error?(/trop d/.test(r.error.message)?"Trop d'essais : réessaie dans une heure":"Vérification impossible pour le moment"):"Ce code n'existe pas");if(!r.error)shake(code);return}
+        if(r.error||!r.data){go.textContent="Activer";go.disabled=false;const m=(r.error&&(r.error.message||""))||"";
+          toast(!r.error?"Ce code n'existe pas":/trop d/.test(m)?"Trop d'essais : réessaie dans une heure":/non connect|JWT/i.test(m)?"Reconnecte-toi à ton compte, puis réessaie":/schema cache|does not exist|PGRST20/.test(m+(r.error.code||""))?"Les codes test ne sont pas encore installés sur le serveur":"Vérification impossible pour le moment");if(!r.error)shake(code);return}
         await subLoad(true);close();renderAll();if(done)done();const nt=TIERS.find(x=>x.k===r.data)||t;
-        setTimeout(()=>sheet(`<div class="confirm"><div class="au-big" style="font-size:34px">🎉</div><h3>Offre ${nt.n} activée !</h3><p>Ton code test est valable sur ton compte, sur tous tes appareils. Profite de toutes les fonctions de l'offre ${nt.n}.</p><button class="primary" data-close>Super</button></div>`),340);return}
+        setTimeout(()=>sheet(`<div class="confirm"><div class="au-big" style="font-size:34px">🎉</div><h3>Offre ${nt.n} activée !</h3><p>Ton code test marche sur ton compte, sur tous tes appareils.</p><button class="primary" data-close>Super</button></div>`),340)}}
+    if(!PAY_ON)return;
+    const chk=()=>{el.querySelector("#pdPay").disabled=!(el.querySelector("#pdCgv").checked&&cloudOn())};
+    el.querySelector("#pdCgv").onchange=chk;chk();
+    const pr=el.querySelector("#pdPromo");pr.oninput=()=>{pr.value=pr.value.toUpperCase().replace(/[^A-Z0-9_-]/g,"").slice(0,30);S.promo=pr.value;saveLocal();el.querySelector(".pd-promo-t").innerHTML=pr.value?"Sera vérifié au paiement":"Facultatif"};
+    el.querySelector("#pdPay").onclick=async()=>{const b=el.querySelector("#pdPay");b.disabled=true;
       b.innerHTML=`<span class="spin"></span>Ouverture du paiement…`;
       const {data,error}=await SB.functions.invoke("checkout",{body:{plan:t.k,period:y?"y":"m",site:SITE,promo:(S.promo||"").trim()}});
       if(error||!data||!data.url){let x={};try{x=await error.context.json()}catch(e){}toast(x.error==="already"?"Tu as déjà un abonnement : change d'offre dans Gérer mon abonnement":x.error==="bad_promo"?"Ce code promo n'existe pas ou n'est plus valable":"Paiement indisponible pour le moment");draw(w,close);return}
