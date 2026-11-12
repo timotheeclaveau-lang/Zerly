@@ -980,7 +980,7 @@ html[data-theme="dark"] .badge{color:#000}
 #report .rp-bar button{height:36px;padding:0 14px;border-radius:18px;font-size:14px;font-weight:650;display:inline-flex;align-items:center;gap:6px}
 #report .rp-go{background:#F2EFE9;color:#18231A}#report .rp-x{background:rgba(242,239,233,.14);color:#F2EFE9;width:36px;padding:0!important;justify-content:center}#report .rp-bar .i{width:16px;height:16px}
 #report .rp-wrap{width:794px;transform-origin:top left;margin:0 auto}
-.rp-page{width:794px;min-height:1123px;background:#fff;color:#18231A;padding:52px 50px 40px;box-sizing:border-box;font:12.5px/1.45 -apple-system,"Helvetica Neue",Helvetica,Arial,sans-serif;position:relative;box-shadow:0 10px 40px rgba(0,0,0,.35)}
+.rp-page{width:794px;height:1123px;overflow:hidden;background:#fff;color:#18231A;padding:52px 50px 40px;box-sizing:border-box;font:12.5px/1.45 -apple-system,"Helvetica Neue",Helvetica,Arial,sans-serif;position:relative;box-shadow:0 10px 40px rgba(0,0,0,.35)}
 .rp-page+.rp-page{margin-top:18px}
 .rp-h{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding-bottom:16px;border-bottom:2px solid #2B3E28}
 .rp-brand{display:flex;align-items:center;gap:10px}.rp-brand svg{width:46px;height:30px}.rp-brand svg path{fill:none;stroke:#2B3E28;stroke-width:28;stroke-linecap:round;stroke-linejoin:round}.rp-brand svg circle{fill:#8B6530}.rp-brand svg .lg-r{stroke:#8B6530;stroke-width:12}
@@ -995,13 +995,22 @@ html[data-theme="dark"] .badge{color:#000}
 .rp-tb tr.tot td{font-weight:700;border-top:1.5px solid #2B3E28;border-bottom:none}
 .rp-bar-c{width:34%}.rp-bar-c i{display:block;height:8px;border-radius:4px;background:#2B3E28}.rp-bar-c i.o{background:#8B6530}
 .rp-two{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.rp-body{display:flow-root}.rp-hs{padding-bottom:10px}.rp-hs .rp-brand svg{width:34px;height:22px}.rp-hs .rp-brand b{font-size:16px}.rp-hs .rp-t b{font-size:13px;margin-top:4px}
+.rp-s{margin-top:24px}.rp-s h3{display:flex;align-items:baseline;gap:6px}.rp-svg{display:block;width:100%;height:auto;margin-top:4px}
+.rp-note{margin:8px 0 0;color:#6b6458;font-size:11.5px;line-height:1.45}.rp-mut{color:#8a8275;font-weight:400;text-transform:none;letter-spacing:0}
+.rp-sum{margin:0;padding:0;list-style:none}.rp-sum li{position:relative;padding:5px 0 5px 18px;font-size:13px;line-height:1.5;border-bottom:1px solid #f1ece2}.rp-sum li:last-child{border:0}.rp-sum li:before{content:"";position:absolute;left:3px;top:12px;width:7px;height:7px;border-radius:50%;background:#B8873E}
+.rp-sum .pos,.rp-tb .pos{color:#3D6B33}.rp-sum .neg,.rp-tb .neg{color:#A4442F}
+.rp-leg{display:flex;gap:16px;font-size:11px;color:#6b6458;margin-bottom:2px}.rp-leg i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+.rp-dn{display:flex;gap:26px;align-items:center}.rp-dn svg{flex:none}.rp-dn .rp-tb{flex:1}
+.rp-dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px;vertical-align:0}
+.rp-track{display:block;height:7px;border-radius:4px;background:#efe9de;overflow:hidden}.rp-track i{display:block;height:100%;border-radius:4px}
 .rp-foot{position:absolute;left:50px;right:50px;bottom:22px;display:flex;justify-content:space-between;color:#8a8275;font-size:10px;border-top:1px solid #ece6da;padding-top:8px}
 @media print{@page{size:A4;margin:0}
   html.printing,html.printing body{background:#fff!important;height:auto!important;min-height:0!important;overflow:visible!important;position:static!important;inset:auto!important;transform:none!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
   html.printing body>*:not(#report){display:none!important}
   html.printing #app,html.printing #sheets,html.printing #toast,html.printing .push,html.printing #auth,html.printing #drawer,html.printing #fab,html.printing #onb{display:none!important}
   html.printing #report{position:static!important;inset:auto!important;overflow:visible!important;padding:0!important;background:#fff!important;display:block!important}html.printing #report .rp-wrap{transform:none!important;width:auto!important;height:auto!important;margin:0!important}
-  html.printing .rp-page{box-shadow:none;width:210mm;min-height:296mm;margin:0;overflow:hidden;page-break-after:always;break-after:page}html.printing .rp-page:last-child{page-break-after:auto;break-after:auto}html.printing .rp-page+.rp-page{margin-top:0}.noprint{display:none!important}}
+  html.printing .rp-page{box-shadow:none;width:210mm;height:296mm;min-height:0;margin:0;overflow:hidden;page-break-after:always;break-after:page}html.printing .rp-page:last-child{page-break-after:auto;break-after:auto}html.printing .rp-page+.rp-page{margin-top:0}.noprint{display:none!important}}
 /* assistant */
 .chat{display:flex;flex-direction:column;gap:8px;margin:10px 0}
 .msg{max-width:86%;padding:11px 14px;border-radius:18px 18px 18px 6px;background:var(--card);box-shadow:var(--card-shadow);font-size:15.5px;line-height:1.4;align-self:flex-start}
@@ -1439,7 +1448,7 @@ html.booting #app{opacity:0}
 /* ================= données ================= */
 const SEED=/*SEED*/null;
 const KEY="finora.v2";
-const VERSION="9.2.4";
+const VERSION="9.4";
 const TYPES={dep:{l:"Dépense",s:-1},rem:{l:"Rémunération",s:1},tro:{l:"Transfert envoyé",s:-1},tri:{l:"Transfert reçu",s:1},plo:{l:"Placement envoyé",s:-1},pli:{l:"Placement récupéré",s:1}};
 const TYPE_FROM_LABEL={"Dépense":"dep","Rémunération":"rem","Transfert envoyé":"tro","Transfert reçu":"tri","Placement envoyé":"plo","Placement récupéré":"pli"};
 const KIND_OF={dep:"dep",rem:"rem",tro:"tr",tri:"tr",plo:"pl",pli:"pl"};
@@ -4244,11 +4253,11 @@ function renderProfile(){
       <button class="cell" id="pLogin">${icon("lock")}<span class="ck">Se connecter</span>${icon("chev","chev")}</button>
       <button class="cell" id="pSignup">${icon("plus")}<span class="ck">Créer un compte</span>${icon("chev","chev")}</button>
     </div>`:""}
-    <div class="sec">Sécurité et offre</div>
+    <div class="sec">${OFFERS_ON?"Sécurité et offre":"Sécurité"}</div>
     <div class="group"><button class="cell" id="pMenu">${icon("list")}<span class="ck">Menu</span><span class="cv">${(S.settings.hideTools||[]).length?plural((S.settings.hideTools||[]).length,"menu")+" caché"+((S.settings.hideTools||[]).length>1?"s":""):"Tout affiché"}${icon("chev")}</span></button></div>
     <div class="group"><button class="cell" id="pNotif">${icon("bell")}<span class="ck">Notifications</span><span class="cv">${notifOn()?"Activées · "+nset().hour+" h":"Désactivées"}${icon("chev")}</span></button><button class="cell" id="pLock">${icon("lock")}<span class="ck">Verrouillage</span><span class="cv">${S.lock&&S.lock.on?(S.lock.cred?"Face ID et code":"Code"):"Désactivé"}${icon("chev")}</span></button>
-      <button class="cell" id="pCur">${icon("coins")}<span class="ck">Monnaie</span><span class="cv">${BASE()} · ${esc(BSYM())}${icon("chev")}</span></button>
-      <button class="cell" id="pPlan">${icon("crown")}<span class="ck">Mon offre</span><span class="cv">${TIERS.find(t=>t.k===tier()).n}${icon("chev")}</span></button></div>
+      <button class="cell" id="pCur">${icon("coins")}<span class="ck">Monnaie</span><span class="cv">${BASE()} · ${esc(BSYM())}${icon("chev")}</span></button>${OFFERS_ON?`
+      <button class="cell" id="pPlan">${icon("crown")}<span class="ck">Mon offre</span><span class="cv">${TIERS.find(t=>t.k===tier()).n}${icon("chev")}</span></button>`:""}</div>
     <div class="sec">Apparence</div>
     <div class="themes" id="pThemes">${[["auto","Automatique","a"],["light","Clair","l"],["dark","Sombre","d"]].map(([k,l,c])=>`<button class="th ${st.theme===k?"on":""}" data-th="${k}">${c==="a"?`<span class="pv a"><span class="pv l"><i></i><i></i><i></i><i></i></span><span class="pv d"><i></i><i></i><i></i><i></i></span></span>`:`<span class="pv ${c}"><i></i><i></i><i></i><i></i></span>`}${l}<span class="rd">${icon("check")}</span></button>`).join("")}</div>
 
@@ -4270,7 +4279,7 @@ function renderProfile(){
     <div class="sec">Informations légales</div>
     <div class="legal">${[["confidentialite.html","Confidentialité"],["cookies.html","Cookies"],["conditions.html","Conditions d'utilisation"],["mentions-legales.html","Mentions légales"],["accessibilite.html","Accessibilité"]].map(([h,l])=>`<a href="${h}">${l}${icon("chev")}</a>`).join("")}</div>
     <p class="foot">Zerly ${VERSION} — gratuit, sans publicité, sans cookie.<br>${cloudOn()?"Tes données sont sauvegardées sur ton compte et restent disponibles sans internet.":"Tes données restent sur ce téléphone, même sans internet."}</p>`;
-  $("pAv").onclick=photoMenu;$("pLock").onclick=openLockSettings;$("pNotif").onclick=openNotifSettings;$("pMenu").onclick=openMenuSettings;$("pCur").onclick=chooseBase;$("pPlan").onclick=openMyPlan;
+  $("pAv").onclick=photoMenu;$("pLock").onclick=openLockSettings;$("pNotif").onclick=openNotifSettings;$("pMenu").onclick=openMenuSettings;$("pCur").onclick=chooseBase;if($("pPlan"))$("pPlan").onclick=openMyPlan;
   // pas connecté : on peut se (re)connecter depuis les Paramètres
   const pli=$("pLogin");if(pli){const go=async v=>{if(!navigator.onLine){toast("Pas de connexion internet");return}if(!SB){toast("Un instant…");await startCloud();if(cloudOn()){renderAll();return}}authShow(v,{email:AUTH.email||"",back:true})};
     pli.onclick=()=>go("login");$("pSignup").onclick=()=>go("signup")}
@@ -4487,11 +4496,13 @@ const FEAT_NAME={accounts:"Comptes bancaires illimités",imports:"Imports illimi
   recurring:"Abonnements détectés",calendar:"Calendrier des paiements",forecast:"Prévision de fin de mois",rules:"Règles de rangement",unusual:"Dépenses inhabituelles",goals:"Objectifs d'épargne",challenges:"Défis d'économie",compare:"Comparaison avec l'an dernier",score:"Score santé financière",worth:"Patrimoine",taxes:"Récap impôts",assistant:"Assistant",
   wrapped:"Bilans du mois et de l'année",report:"Rapport PDF",shared:"Dépenses partagées",bank:"Synchronisation bancaire"};
 // tant que le paiement n'est pas branché, tout est débloqué ; « Mode test » permet de voir chaque offre
-const PAY_ON=CLOUD_ON&&!!CLOUD.stripe;
+// OFFRES_ON=false : toute l'appli est gratuite et rien ne parle d'offres ni de paiement (le code reste là pour plus tard)
+const OFFERS_ON=false;
+const PAY_ON=OFFERS_ON&&CLOUD_ON&&!!CLOUD.stripe;
 // aperçu sur ton ordinateur (localhost) : pas d'écran de connexion au démarrage. Les offres restent en Gratuit (seuls les codes test débloquent)
 const DEV_LOCAL=/^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname);
 const SUB_LIVE=["active","trialing","past_due"];
-const tier=()=>{if(!CLOUD_ON)return "free";
+const tier=()=>{if(!OFFERS_ON)return "plus";if(!CLOUD_ON)return "free";
   const x=S.sub;if(!(cloudOn()||S.owner)||!x||!SUB_LIVE.includes(x.status))return "free";
   if(x.current_period_end&&Date.parse(x.current_period_end)<Date.now()-3*864e5)return "free";return x.tier||"free"};
 // abonnement lu sur le serveur (écrit par Stripe via la fonction stripe-webhook)
@@ -4601,7 +4612,7 @@ function openPlanDetail(k,yearly,need,done){
   sheet(`<div class="sh-title">Offre ${esc(t.n)}<button class="xbtn" data-close aria-label="Fermer">${icon("x")}</button></div><div class="pdx"></div>`,{mount:(w,close)=>draw(w,close)});
 }
 // retour de la page Stripe : on attend la confirmation du serveur, puis on active l'offre
-async function payReturn(){
+async function payReturn(){if(!OFFERS_ON)return;
   const m=/[?&]paid=([01])/.exec(location.search);if(!m)return;history.replaceState(null,"",location.pathname);
   if(m[1]==="0"){toast("Paiement annulé : rien n'a été débité");return}
   let want=null;try{want=localStorage.getItem("zerly.paying");localStorage.removeItem("zerly.paying")}catch(e){}
@@ -4939,7 +4950,7 @@ const TOOLS={
   plans:{n:"Offres Zerly",ic:"crown",f:null},
   lock:{n:"Verrouillage",ic:"lock",f:null,d:"Face ID ou code"},
   settings:{n:"Paramètres",ic:"gear",f:null}};
-const MENU_GROUPS=[["Au quotidien",["month","budgets","calendar","recurring"]],["Épargne et objectifs",["goals","challenges","worth","loans","sim"]],["Analyses",["score","wrapM","wrapY","report","assistant"]],["Outils",["rules","tags","shared","warranty","taxes"]],["Compte",["plans","settings"]]];
+const MENU_GROUPS=[["Au quotidien",["month","budgets","calendar","recurring"]],["Épargne et objectifs",["goals","challenges","worth","loans","sim"]],["Analyses",["score","wrapM","wrapY","report","assistant"]],["Outils",["rules","tags","shared","warranty","taxes"]],["Compte",["plans","settings"]]].map(([g,ks])=>[g,ks.filter(k=>OFFERS_ON||(k!=="plans"&&k!=="assistant"))]).filter(([,ks])=>ks.length);
 function toolSub(k){try{
   if(k==="remind"){const n=remindCount();return n?`${n} à voir`:"Tout est en ordre"}
   if(k==="month"&&S.accounts.length){const p=monthPlan();return `${eurTile(p.perDay)} par jour`}
@@ -4968,7 +4979,7 @@ function renderMenu(){
       ${S.accounts.length?`<div class="dr-sec">Mes comptes</div>${S.accounts.map(a=>`<button class="dr-it" data-mo="${a.id}"><span class="mono">${esc(monoOf(a))}</span><span class="dr-t">${esc(a.name)}</span><span class="dr-v num">${eurTile(curBal(a.id))}</span></button>`).join("")}`:""}
       ${free.map(([g,ks])=>`<div class="dr-sec">${g}</div>${ks.map(row).join("")}`).join("")}
     </div>
-    <button class="dr-me" data-tool="settings"><span class="avatar">${avatarInner()}</span><span class="dr-t">${esc((me.first+" "+me.last).trim()||"Mon compte")}<small>Offre ${offer} · Paramètres, photo</small></span>${icon("chev","chev")}</button>`;
+    <button class="dr-me" data-tool="settings"><span class="avatar">${avatarInner()}</span><span class="dr-t">${esc((me.first+" "+me.last).trim()||"Mon compte")}<small>${OFFERS_ON?`Offre ${offer} · `:""}Paramètres, photo</small></span>${icon("chev","chev")}</button>`;
   root.querySelectorAll("[data-tool]").forEach(b=>b.onclick=()=>{closeDrawer();setTimeout(()=>openTool(b.dataset.tool),220)});
   root.querySelectorAll("[data-mo]").forEach(b=>b.onclick=()=>{closeDrawer();setTimeout(()=>openAccount(b.dataset.mo),220)});
   root.querySelectorAll("[data-nav]").forEach(b=>b.onclick=()=>{const it=NAV.find(x=>x[0]===b.dataset.nav);closeDrawer();closeAllPush();setTimeout(it[3],180)});
@@ -5720,35 +5731,104 @@ async function openReport(){
   for(let i=1;i<=24;i++){const ym=addMonths(t.slice(0,7)+"-01",-i).slice(0,7);if(S.ops.some(o=>o.d.startsWith(ym)))items.push({label:capF(MONTHS[+ym.slice(5)-1])+" "+ym.slice(0,4),sub:"Rapport du mois",value:"m:"+ym,icon:icon("cal")})}
   for(let y=+t.slice(0,4)-1;y>=+t.slice(0,4)-5;y--)if(S.ops.some(o=>o.d.startsWith(String(y))))items.push({label:"Année "+y,sub:"Rapport de l'année",value:"y:"+y,icon:icon("chart")});
   if(!items.length){toast("Le rapport arrive quand un mois est terminé : reviens le 1er du mois prochain");return}
-  const v=await pick("Quel rapport ?",items);if(!v)return;const [kind,key]=v.split(":");
-  const from=kind==="y"?key+"-01-01":key+"-01",to=kind==="y"?key+"-12-31":endOfMonth(key+"-01");
-  const pFrom=kind==="y"?(+key-1)+"-01-01":addMonths(from,-1),pTo=kind==="y"?(+key-1)+"-12-31":endOfMonth(pFrom);
-  const ops=S.ops.filter(o=>o.d>=from&&o.d<=to),dep=ops.filter(o=>o.t==="dep"),rem=ops.filter(o=>o.t==="rem");
-  const D=dep.reduce((s,o)=>s+o.m,0),G=rem.reduce((s,o)=>s+o.m,0),pD=S.ops.filter(o=>o.t==="dep"&&o.d>=pFrom&&o.d<=pTo).reduce((s,o)=>s+o.m,0);
-  const byC={};for(const o of dep)byC[o.c||"Divers"]=(byC[o.c||"Divers"]||0)+o.m;const cats=Object.entries(byC).sort((a,b)=>b[1]-a[1]);
-  const top=dep.slice().sort((a,b)=>b.m-a.m).slice(0,kind==="y"?12:8);
-  const title=kind==="y"?"Rapport annuel "+key:"Rapport mensuel · "+capF(MONTHS[+key.slice(5)-1])+" "+key.slice(0,4);
-  const name=(S.profile.first+" "+S.profile.last).trim(),money=v=>eurAbs(v).replace(/ /g," "),sg=v=>(v>=0?"+":"−")+money(Math.abs(v));
+  const v=await pick("Quel rapport ?",items);if(!v)return;const [kind,key]=v.split(":"),Yr=kind==="y";
+  // ---------- les chiffres
+  const from=Yr?key+"-01-01":key+"-01",to=Yr?key+"-12-31":endOfMonth(key+"-01");
+  const pFrom=Yr?(+key-1)+"-01-01":addMonths(from,-1),pTo=Yr?(+key-1)+"-12-31":endOfMonth(pFrom);
+  const inP=(o,a,b)=>o.d>=a&&o.d<=b,sum=L=>L.reduce((s,o)=>s+o.m,0);
+  const ops=S.ops.filter(o=>inP(o,from,to)),dep=ops.filter(o=>o.t==="dep"),rem=ops.filter(o=>o.t==="rem");
+  const D=sum(dep),G=sum(rem),pOps=S.ops.filter(o=>inP(o,pFrom,pTo)),pD=sum(pOps.filter(o=>o.t==="dep")),pG=sum(pOps.filter(o=>o.t==="rem"));
+  const byCat=L=>{const m={};for(const o of L)m[o.c||"Divers"]=(m[o.c||"Divers"]||0)+o.m;return m};
+  const cMap=byCat(dep),pMap=byCat(pOps.filter(o=>o.t==="dep")),cats=Object.entries(cMap).sort((a,b)=>b[1]-a[1]);
+  const name=(S.profile.first+" "+S.profile.last).trim(),periodTxt=Yr?"en "+key:"en "+MONTHS[+key.slice(5)-1];
+  const money=v=>eurAbs(v).replace(/ /g," "),sm=v=>(v<-0.004?"−":"")+money(v),sg=v=>(v>=0?"+":"−")+money(Math.abs(v)),pct=(a,b)=>b?Math.round(a/b*100):0;
+  const kfmt=v=>{v=Math.abs(v);return v>=10000?Math.round(v/1000)+" k":v>=1000?(v/1000).toFixed(1).replace(".",",").replace(",0","")+" k":String(Math.round(v))};
+  const dfmt=s=>{const d=pd(s);return d.getDate()+" "+MSHORT[d.getMonth()]};
+  const title=Yr?"Rapport annuel "+key:"Rapport du mois · "+capF(MONTHS[+key.slice(5)-1])+" "+key.slice(0,4);
+  const COL=["#2B3E28","#B8873E","#6E8F63","#8A7A66","#A4442F","#C9B48C","#3F5A6B","#9DB38F","#5C4A3A"];
+  // ---------- petits graphiques (SVG, nets à l'impression)
+  const W=694;
+  const bars=(rows,h=170)=>{const mx=Math.max(1,...rows.flatMap(r=>[r.g,r.d])),L=34,B=22,cw=(W-L)/rows.length,bw=Math.min(18,cw*.32),y=v=>(h-B)-(v/mx)*(h-B-12);
+    const grid=[0,.5,1].map(f=>{const yy=y(mx*f);return `<line x1="${L}" x2="${W}" y1="${yy}" y2="${yy}" stroke="#ece6da"/><text x="${L-6}" y="${yy+3.5}" text-anchor="end" font-size="9.5" fill="#8a8275">${kfmt(mx*f)}</text>`}).join("");
+    return `<svg viewBox="0 0 ${W} ${h}" class="rp-svg">${grid}${rows.map((r,i)=>{const cx=L+cw*i+cw/2;return `<rect x="${cx-bw-1.5}" y="${y(r.g)}" width="${bw}" height="${(h-B)-y(r.g)}" rx="3" fill="#6E8F63"/><rect x="${cx+1.5}" y="${y(r.d)}" width="${bw}" height="${(h-B)-y(r.d)}" rx="3" fill="#B8873E"/><text x="${cx}" y="${h-6}" text-anchor="middle" font-size="10" fill="${r.cur?"#18231A":"#6b6458"}" font-weight="${r.cur?700:400}">${esc(r.l)}</text>`}).join("")}</svg>`};
+  const line=(pts,h=150,color="#2B3E28")=>{if(pts.length<2)return "";const vs=pts.map(p=>p.v),mn=Math.min(...vs),mx=Math.max(...vs),pad=(mx-mn)*.15||Math.abs(mx)*.1||1,lo=mn-pad,hi=mx+pad,L=40,B=22;
+    const x=i=>L+(W-L-8)*i/(pts.length-1),y=v=>8+(h-B-8)*(1-(v-lo)/(hi-lo)),P=pts.map((p,i)=>`${x(i).toFixed(1)},${y(p.v).toFixed(1)}`);
+    const step=Math.ceil(pts.length/7);
+    return `<svg viewBox="0 0 ${W} ${h}" class="rp-svg">${[lo+pad,(lo+hi)/2,hi-pad].map(v=>`<line x1="${L}" x2="${W}" y1="${y(v)}" y2="${y(v)}" stroke="#ece6da"/><text x="${L-6}" y="${y(v)+3.5}" text-anchor="end" font-size="9.5" fill="#8a8275">${v<0?"−":""}${kfmt(v)}</text>`).join("")}
+      <polygon points="${L},${h-B} ${P.join(" ")} ${x(pts.length-1)},${h-B}" fill="${color}" opacity=".08"/><polyline points="${P.join(" ")}" fill="none" stroke="${color}" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+      <circle cx="${x(pts.length-1)}" cy="${y(vs[vs.length-1])}" r="4" fill="${color}"/>${pts.map((p,i)=>i%step&&i!==pts.length-1?"":`<text x="${x(i)}" y="${h-6}" text-anchor="middle" font-size="10" fill="#6b6458">${esc(p.l)}</text>`).join("")}</svg>`};
+  const cols=(vals,labels,h=120,color="#B8873E")=>{const mx=Math.max(1,...vals),L=34,B=20,cw=(W-L)/vals.length,bw=Math.max(3,cw*.62),y=v=>(h-B)-(v/mx)*(h-B-10),step=Math.ceil(vals.length/10);
+    return `<svg viewBox="0 0 ${W} ${h}" class="rp-svg">${[0,1].map(f=>`<line x1="${L}" x2="${W}" y1="${y(mx*f)}" y2="${y(mx*f)}" stroke="#ece6da"/><text x="${L-6}" y="${y(mx*f)+3.5}" text-anchor="end" font-size="9.5" fill="#8a8275">${kfmt(mx*f)}</text>`).join("")}
+      ${vals.map((v,i)=>`<rect x="${L+cw*i+(cw-bw)/2}" y="${y(v)}" width="${bw}" height="${Math.max(0,(h-B)-y(v))}" rx="2" fill="${color}"/>${i%step?"":`<text x="${L+cw*i+cw/2}" y="${h-5}" text-anchor="middle" font-size="9.5" fill="#6b6458">${esc(labels[i])}</text>`}`).join("")}</svg>`};
+  const donut=(parts,size=170)=>{const tot=parts.reduce((s,p)=>s+p[1],0)||1,r=size/2-14,c=size/2;let a=-Math.PI/2;
+    const arcs=parts.map((p,i)=>{const f=p[1]/tot;if(f>=.9999)return `<circle cx="${c}" cy="${c}" r="${r}" fill="none" stroke="${COL[i%COL.length]}" stroke-width="26"/>`;const a2=a+f*2*Math.PI,lg=f>.5?1:0;
+      const d=`M${(c+r*Math.cos(a)).toFixed(2)} ${(c+r*Math.sin(a)).toFixed(2)}A${r} ${r} 0 ${lg} 1 ${(c+r*Math.cos(a2)).toFixed(2)} ${(c+r*Math.sin(a2)).toFixed(2)}`;a=a2;return `<path d="${d}" fill="none" stroke="${COL[i%COL.length]}" stroke-width="26"/>`}).join("");
+    return `<svg viewBox="0 0 ${size} ${size}" width="${size}" height="${size}">${arcs}<text x="${c}" y="${c-2}" text-anchor="middle" font-size="16" font-weight="700" fill="#18231A">${kfmt(tot)} €</text><text x="${c}" y="${c+15}" text-anchor="middle" font-size="10" fill="#6b6458">dépensés</text></svg>`};
+  const legend=items=>`<div class="rp-leg">${items.map(([c,l])=>`<span><i style="background:${c}"></i>${l}</span>`).join("")}</div>`;
+  // ---------- séries
+  const nMonths=Yr?12:6,mList=Array.from({length:nMonths},(_,i)=>Yr?key+"-"+pad2(i+1):addMonths(from,i-nMonths+1).slice(0,7));
+  const mRows=mList.map(ym=>{const L=S.ops.filter(o=>o.d.startsWith(ym));return {ym,l:capF(MSHORT[+ym.slice(5)-1]).replace(".",""),g:sum(L.filter(o=>o.t==="rem")),d:sum(L.filter(o=>o.t==="dep")),cur:!Yr&&ym===key}});
+  const totalAt=d=>S.accounts.reduce((s,a)=>s+balAt(a,d),0);
+  const balPts=Yr?[{l:"Début",v:totalAt((+key-1)+"-12-31")},...mList.map(ym=>({l:capF(MSHORT[+ym.slice(5)-1]).replace(".",""),v:totalAt(endOfMonth(ym+"-01"))}))]
+    :(()=>{const out=[],last=+to.slice(8);out.push({l:"1",v:totalAt(addDays(from,-1))});for(let d=4;d<=last;d+=3){out.push({l:String(d),v:totalAt(key+"-"+pad2(d))})}if(out[out.length-1].l!==String(last))out.push({l:String(last),v:totalAt(to)});return out})();
+  // ---------- ce qu'il faut retenir
+  const sav=G-D,top=cats[0],budg=Yr?[]:budgetRows(key);
+  const moves=Object.keys({...cMap,...pMap}).map(c=>[c,(cMap[c]||0)-(pMap[c]||0)]).sort((a,b)=>b[1]-a[1]);
+  const bullets=[
+    G||D?(sav>=0?`Tu as reçu <b>${money(G)}</b> et dépensé <b>${money(D)}</b> ${periodTxt} : il te reste <b class="pos">${money(sav)}</b>, soit ${pct(sav,G)} % de tes rentrées mis de côté.`:`Tu as dépensé <b>${money(D)}</b> pour <b>${money(G)}</b> de rentrées ${periodTxt} : <b class="neg">${money(-sav)} de plus</b> que ce qui est entré.`):"",
+    pD?`Tes dépenses sont <b>${D<=pD?"en baisse":"en hausse"} de ${Math.abs(Math.round((D/pD-1)*100))} %</b> par rapport ${Yr?"à "+(+key-1):"au mois d'avant"} (${money(pD)}).`:"",
+    top?`Ton plus gros poste : <b>${esc(top[0])}</b>, ${money(top[1])} (${pct(top[1],D)} % de tes dépenses).`:"",
+    pD&&moves[0]&&moves[0][1]>Math.max(20,D*.03)?`Ce qui a le plus augmenté : <b>${esc(moves[0][0])}</b> (+${money(moves[0][1])}).`:"",
+    pD&&moves.length&&moves[moves.length-1][1]<-Math.max(20,D*.03)?`Ce qui a le plus baissé : <b>${esc(moves[moves.length-1][0])}</b> (−${money(-moves[moves.length-1][1])}).`:"",
+    budg.length?`Budgets : <b>${budg.filter(b=>b.p<=1).length} sur ${budg.length}</b> respectés.`:""].filter(Boolean);
+  // ---------- les blocs, dans l'ordre ; chaque bloc reste entier sur sa page
+  const B=[];const sec=(h,html,note)=>`<div class="rp-s"><h3>${h}</h3>${html}${note?`<p class="rp-note">${note}</p>`:""}</div>`;
+  B.push({html:()=>`<div class="rp-kpi"><div><small>Rentrées</small><b class="pos">+${money(G)}</b></div><div><small>Dépenses</small><b class="neg">−${money(D)}</b></div><div><small>Reste</small><b class="${sav>=0?"pos":"neg"}">${sg(sav)}</b></div><div><small>Mis de côté</small><b>${G?Math.max(0,pct(sav,G)):0} %</b></div></div>`});
+  if(bullets.length)B.push({html:()=>sec("L'essentiel",`<ul class="rp-sum">${bullets.map(x=>`<li>${x}</li>`).join("")}</ul>`)});
+  B.push({html:()=>sec(Yr?"Mois par mois":"Les 6 derniers mois",legend([["#6E8F63","Rentrées"],["#B8873E","Dépenses"]])+bars(mRows),Yr?"Chaque paire de barres = un mois : ce qui est entré à gauche, ce qui est sorti à droite.":"Le mois du rapport est en gras. Quand la barre orange dépasse la verte, tu as dépensé plus que tu n'as reçu.")});
+  if(cats.length){const main=cats.slice(0,7),rest=cats.slice(7).reduce((s,c)=>s+c[1],0),parts=rest?[...main,["Autres",rest]]:main;
+    B.push({html:()=>sec("Où part ton argent",`<div class="rp-dn">${donut(parts)}<table class="rp-tb"><tr><th>Catégorie</th><th class="n">Montant</th><th class="n">Part</th><th class="n">${Yr?"vs "+(+key-1):"vs mois d'avant"}</th></tr>${parts.map(([c,v],i)=>{const pv=c==="Autres"?null:(pMap[c]||0),dlt=pv==null||!pD?"":pv?Math.round((v/pv-1)*100):null;
+      return `<tr><td><i class="rp-dot" style="background:${COL[i%COL.length]}"></i>${esc(c)}</td><td class="n">${money(v)}</td><td class="n">${pct(v,D)} %</td><td class="n ${dlt>0?"neg":dlt<0?"pos":""}">${dlt===""?"":dlt==null?"nouveau":(dlt>0?"+":"")+dlt+" %"}</td></tr>`}).join("")}</table></div>`)})}
+  if(!Yr&&dep.length){const last=+to.slice(8),per=Array.from({length:last},(_,i)=>sum(dep.filter(o=>+o.d.slice(8)===i+1)));
+    B.push({html:()=>sec("Tes dépenses jour par jour",cols(per,per.map((_,i)=>String(i+1))),`En moyenne ${money(D/last)} par jour. Les pics sont souvent le loyer, les courses ou un gros achat.`)})}
+  if(Yr){const rates=mRows.map(r=>r.g?Math.round((r.g-r.d)/r.g*100):0);
+    B.push({html:()=>sec("Ce que tu as mis de côté chaque mois",`<table class="rp-tb rp-mt"><tr><th>Mois</th><th class="n">Rentrées</th><th class="n">Dépenses</th><th class="n">Reste</th><th class="n">Mis de côté</th></tr>${mRows.map((r,i)=>`<tr><td>${capF(MONTHS[i])}</td><td class="n">${money(r.g)}</td><td class="n">${money(r.d)}</td><td class="n ${r.g-r.d>=0?"pos":"neg"}">${sg(r.g-r.d)}</td><td class="n">${r.g?rates[i]+" %":"–"}</td></tr>`).join("")}<tr class="tot"><td>Total</td><td class="n">${money(G)}</td><td class="n">${money(D)}</td><td class="n">${sg(sav)}</td><td class="n">${G?pct(sav,G)+" %":"–"}</td></tr></table>`)})}
+  if(S.accounts.length){const start=Yr?totalAt((+key-1)+"-12-31"):totalAt(addDays(from,-1)),end=totalAt(to);
+    B.push({html:()=>sec("L'argent sur tes comptes",line(balPts),`Total de tous tes comptes : ${sm(start)} au début, <b>${sm(end)}</b> à la fin (${sg(end-start)}).`)});
+    const accRows=S.accounts.map(a=>`<tr><td>${esc(a.name)}${a.kind?` <span class="rp-mut">· ${esc(a.kind)}</span>`:""}</td><td class="n">${sm(Yr?balAt(a,(+key-1)+"-12-31"):balAt(a,addDays(from,-1)))}</td><td class="n"><b>${sm(balAt(a,to))}</b></td></tr>`);
+    B.push({h:"Tes comptes au "+pd(to).toLocaleDateString("fr-FR"),rows:accRows,head:`<tr><th>Compte</th><th class="n">Au début</th><th class="n">À la fin</th></tr>`,tail:`<tr class="tot"><td>Total</td><td class="n">${sm(start)}</td><td class="n">${sm(end)}</td></tr>`})}
+  if(budg.length)B.push({h:"Tes budgets",head:`<tr><th>Catégorie</th><th></th><th class="n">Dépensé</th><th class="n">Budget</th><th class="n"></th></tr>`,
+    rows:budg.map(b=>`<tr><td>${esc(b.c)}</td><td class="rp-bar-c"><span class="rp-track"><i style="width:${Math.min(100,b.p*100).toFixed(0)}%;background:${b.p<=.85?"#6E8F63":b.p<=1?"#B8873E":"#A4442F"}"></i></span></td><td class="n">${money(b.s)}</td><td class="n">${money(b.b)}</td><td class="n ${b.p<=1?"pos":"neg"}">${b.p<=1?"Respecté":"Dépassé de "+money(b.s-b.b)}</td></tr>`)});
+  const rec=recurring().filter(r=>r.t==="dep");
+  if(rec.length)B.push({h:"Tes prélèvements réguliers",note:`Au total, environ ${money(rec.reduce((s,r)=>s+r.year,0))} par an, soit ${money(rec.reduce((s,r)=>s+r.year,0)/12)} par mois.`,head:`<tr><th>Nom</th><th>Rythme</th><th class="n">Montant</th><th class="n">Par an</th></tr>`,
+    rows:rec.slice(0,20).map(r=>`<tr><td>${esc(r.name)}</td><td class="rp-mut">${PER_TXT[r.per]||""}</td><td class="n">${money(r.amt)}</td><td class="n">${money(r.year)}</td></tr>`)});
+  const big=dep.slice().sort((a,b)=>b.m-a.m).slice(0,Yr?15:10);
+  if(big.length)B.push({h:"Tes plus grosses dépenses",head:`<tr><th>Date</th><th>Libellé</th><th>Catégorie</th><th class="n">Montant</th></tr>`,
+    rows:big.map(o=>`<tr><td class="rp-mut">${dfmt(o.d)}</td><td>${esc(o.l||o.c||"")}</td><td class="rp-mut">${esc(o.c||"")}</td><td class="n">${money(o.m)}</td></tr>`)});
+  // ---------- mise en page A4 automatique
   const LOGO=`<svg viewBox="80 120 380 250"><path d="M110 345 L188 260 Q203 244 219 258 L262 296 Q278 310 293 295 L369 217"/><circle cx="405" cy="180" r="24"/><path class="lg-r" d="M445 180h10M433.3 208.3l7.1 7.1M405 220v10M365 180h-10M376.7 151.7l-7.1-7.1M405 140v-10M433.3 151.7l7.1-7.1"/></svg>`;
   const head=`<div class="rp-h"><div class="rp-brand">${LOGO}<b>Zerly</b></div><div class="rp-t"><b>${esc(title)}</b><span>Du ${pd(from).toLocaleDateString("fr-FR")} au ${pd(to).toLocaleDateString("fr-FR")}${name?" · "+esc(name):""} · édité le ${new Date().toLocaleDateString("fr-FR")}</span></div></div>`;
-  const foot=n=>`<div class="rp-foot"><span>Généré par Zerly à partir de tes opérations · document indicatif, ce n'est pas un relevé bancaire</span><span>Page ${n}</span></div>`;
-  const kpi=`<div class="rp-kpi"><div><small>Rentrées</small><b class="pos">+${money(G)}</b></div><div><small>Dépenses</small><b class="neg">−${money(D)}</b></div><div><small>Bilan</small><b class="${G-D>=0?"pos":"neg"}">${sg(G-D)}</b></div><div><small>Épargne</small><b>${G?Math.round((G-D)/G*100):0} %</b></div></div>
-    <p class="rp-p">${pD?`Dépenses ${D<=pD?"en baisse":"en hausse"} de ${Math.abs(Math.round((D/pD-1)*100))} % par rapport ${kind==="y"?"à "+(+key-1):"au mois précédent"} (${money(pD)}). `:""}${plural(ops.length,"opération")} sur la période.</p>`;
-  const catT=`<div class="rp-s"><h3>Dépenses par catégorie</h3><table class="rp-tb"><tr><th>Catégorie</th><th></th><th class="n">Montant</th><th class="n">Part</th></tr>${cats.slice(0,14).map(([c,v])=>`<tr><td>${esc(c)}</td><td class="rp-bar-c"><i style="width:${(v/cats[0][1]*100).toFixed(0)}%"></i></td><td class="n">${money(v)}</td><td class="n">${D?Math.round(v/D*100):0} %</td></tr>`).join("")}<tr class="tot"><td>Total</td><td></td><td class="n">${money(D)}</td><td class="n">100 %</td></tr></table></div>`;
-  let months="";if(kind==="y"){const R=Array.from({length:12},(_,i)=>{const ym=key+"-"+pad2(i+1),L=ops.filter(o=>o.d.startsWith(ym));return {m:i,g:L.filter(o=>o.t==="rem").reduce((s,o)=>s+o.m,0),d:L.filter(o=>o.t==="dep").reduce((s,o)=>s+o.m,0)}}),mx=Math.max(1,...R.map(r=>Math.max(r.g,r.d)));
-    months=`<div class="rp-s"><h3>Mois par mois</h3><table class="rp-tb"><tr><th>Mois</th><th class="n">Rentrées</th><th class="n">Dépenses</th><th class="n">Bilan</th><th></th></tr>${R.map(r=>`<tr><td>${capF(MONTHS[r.m])}</td><td class="n">${money(r.g)}</td><td class="n">${money(r.d)}</td><td class="n">${sg(r.g-r.d)}</td><td class="rp-bar-c"><i class="o" style="width:${(r.d/mx*100).toFixed(0)}%"></i></td></tr>`).join("")}<tr class="tot"><td>Total</td><td class="n">${money(G)}</td><td class="n">${money(D)}</td><td class="n">${sg(G-D)}</td><td></td></tr></table></div>`}
-  const accT=`<div class="rp-s"><h3>Tes comptes au ${shortDate(to)}</h3><table class="rp-tb">${S.accounts.map(a=>`<tr><td>${esc(a.name)}<br><small style="color:#8a8275">${esc(a.kind||"")}</small></td><td class="n">${money(balAt(a,to))}</td></tr>`).join("")}<tr class="tot"><td>Total</td><td class="n">${money(S.accounts.reduce((s,a)=>s+balAt(a,to),0))}</td></tr></table></div>`;
-  const rec=recurring().filter(r=>r.t==="dep").slice(0,10);
-  const recT=rec.length?`<div class="rp-s"><h3>Prélèvements réguliers</h3><table class="rp-tb">${rec.map(r=>`<tr><td>${esc(r.name)}</td><td>${PER_TXT[r.per]}</td><td class="n">${money(r.amt)}</td></tr>`).join("")}<tr class="tot"><td>Par an</td><td></td><td class="n">${money(rec.reduce((s,r)=>s+r.year,0))}</td></tr></table></div>`:"";
-  const bud=kind==="m"?budgetRows(key):[];
-  const budT=bud.length?`<div class="rp-s"><h3>Budgets</h3><table class="rp-tb">${bud.map(b=>`<tr><td>${esc(b.c)}</td><td class="n">${money(b.s)} / ${money(b.b)}</td><td class="n" style="color:${b.p<=1?"#3D6B33":"#A4442F"}">${b.p<=1?"Respecté":"Dépassé"}</td></tr>`).join("")}</table></div>`:"";
-  const topT=`<div class="rp-s"><h3>Plus grosses dépenses</h3><table class="rp-tb"><tr><th>Date</th><th>Libellé</th><th>Catégorie</th><th class="n">Montant</th></tr>${top.map(o=>`<tr><td>${shortDate(o.d)}</td><td>${esc(o.l||o.c)}</td><td>${esc(o.c||"")}</td><td class="n">${money(o.m)}</td></tr>`).join("")}</table></div>`;
-  const pages=kind==="y"?[head+kpi+months+catT,head+`<div class="rp-two">${accT}<div>${recT}</div></div>`+topT]:[head+kpi+catT+`<div class="rp-two">${accT}<div>${budT}${recT}</div></div>`+topT];
+  const headS=`<div class="rp-h rp-hs"><div class="rp-brand">${LOGO}<b>Zerly</b></div><div class="rp-t"><b>${esc(title)}</b></div></div>`;
   const r=document.createElement("div");r.id="report";
-  r.innerHTML=`<div class="rp-bar noprint"><b>${esc(title)}</b><button class="rp-go">${icon("print")}PDF / Imprimer</button><button class="rp-x" aria-label="Fermer">${icon("x")}</button></div>
-    <div class="rp-wrap">${pages.map((h,i)=>`<div class="rp-page">${h}${foot(i+1)}</div>`).join("")}</div>`;
+  r.innerHTML=`<div class="rp-bar noprint"><b>${esc(title)}</b><button class="rp-go">${icon("print")}PDF / Imprimer</button><button class="rp-x" aria-label="Fermer">${icon("x")}</button></div><div class="rp-wrap"></div>`;
   document.body.appendChild(r);document.documentElement.classList.add("printing");armBack();
-  const fit=()=>{const w=r.querySelector(".rp-wrap"),k=Math.min(1,(innerWidth-24)/794);w.style.transform=`scale(${k})`;w.style.height=(w.scrollHeight*k)+"px";w.style.marginLeft=Math.max(12,(innerWidth-794*k)/2)+"px"};
+  const wrap=r.querySelector(".rp-wrap"),LIMIT=1123-64;let page,body,n=0;
+  const newPage=()=>{n++;page=document.createElement("div");page.className="rp-page";page.innerHTML=(n===1?head:headS)+`<div class="rp-body"></div><div class="rp-foot"><span>Généré par Zerly à partir de tes opérations · document indicatif, ce n'est pas un relevé bancaire</span><span class="rp-pn"></span></div>`;wrap.appendChild(page);body=page.querySelector(".rp-body")};
+  const fits=()=>body.offsetTop+body.offsetHeight<=LIMIT;
+  const add=html=>{const d=document.createElement("div");d.innerHTML=html;const el=d.firstElementChild;body.appendChild(el);return el};
+  const tbl=(b,rows,cont)=>`<div class="rp-s"><h3>${b.h}${cont?` <span class="rp-mut">(suite)</span>`:""}</h3><table class="rp-tb">${b.head}${rows.join("")}${b.tail&&!b.more?b.tail:""}</table>${b.note&&!b.more?`<p class="rp-note">${b.note}</p>`:""}</div>`;
+  newPage();
+  for(const b of B){
+    if(!b.rows){let el=add(b.html());if(!fits()&&body.children.length>1){el.remove();newPage();add(b.html())}continue}
+    let rows=b.rows.slice(),cont=false;
+    while(rows.length){b.more=false;let el=add(tbl(b,rows,cont));if(fits()){rows=[];break}
+      el.remove();if(body.children.length){newPage();continue}let k=rows.length-1;
+      for(;k>=3;k--){b.more=true;el=add(tbl(b,rows.slice(0,k),cont));if(fits())break;el.remove()}
+      if(k>=3){rows=rows.slice(k);cont=true;newPage();continue}
+      if(body.children.length){newPage();continue}
+      b.more=false;add(tbl(b,rows,cont));rows=[]}}
+  wrap.querySelectorAll(".rp-pn").forEach((x,i,all)=>x.textContent=`Page ${i+1} sur ${all.length}`);
+  const fit=()=>{const k=Math.min(1,(innerWidth-24)/794);wrap.style.transform=`scale(${k})`;wrap.style.height=(wrap.scrollHeight*k)+"px";wrap.style.marginLeft=Math.max(12,(innerWidth-794*k)/2)+"px"};
   fit();addEventListener("resize",fit);
   const close=()=>{removeEventListener("resize",fit);r.remove();document.documentElement.classList.remove("printing")};
   r.querySelector(".rp-x").onclick=close;r.querySelector(".rp-go").onclick=()=>{document.documentElement.classList.add("printing");requestAnimationFrame(()=>setTimeout(()=>window.print(),60))};
