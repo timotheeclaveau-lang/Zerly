@@ -1,5 +1,5 @@
 // Zerly : s'ouvre depuis le cache (sans internet) et se met à jour en arrière-plan
-const V="zerly-v8.9";
+const V="zerly-v9.2.3";
 const FILES=["./","./index.html","./manifest.webmanifest","./icon-180.png","./icon-192.png","./icon-512.png","./confidentialite.html","./cookies.html","./conditions.html","./mentions-legales.html","./accessibilite.html"];
 // seuls les fichiers de ce site passent par le cache ; le compte (Supabase) va directement sur le réseau
 self.addEventListener("install",e=>{e.waitUntil(caches.open(V).then(c=>c.addAll(FILES).then(()=>c.addAll(["./lib/supabase/supabase.js","./lib/pdfjs/pdf.min.js","./lib/pdfjs/pdf.worker.min.js"]).catch(()=>{}))).then(()=>self.skipWaiting()))});

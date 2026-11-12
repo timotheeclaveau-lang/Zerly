@@ -590,6 +590,7 @@ html[data-theme="dark"]{--warn:#D2A86A;--warn-bg:rgba(196,154,94,.14);--warn-lin
 .dmeta{display:flex;flex-direction:column;gap:2px;padding:10px 12px 12px;min-width:0}
 .dmeta b{font-size:14.5px;font-weight:650;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .dmeta small{font-size:12.5px;color:var(--text2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dkind{display:inline-flex;align-items:center;gap:3px;font-style:normal;font-size:11px;font-weight:700;color:var(--gold-t);background:var(--gold-bg);padding:2px 7px;border-radius:7px;margin-bottom:3px;align-self:flex-start}.dkind .i{width:11px;height:11px}
 .dfree{display:flex;align-items:center;gap:4px;color:var(--warn)!important}
 .dfree svg{width:13px;height:13px}
 .docrow{display:grid;grid-template-columns:1fr 1fr;gap:10px}
@@ -880,6 +881,33 @@ html[data-theme="dark"] .badge{color:#000}
 .ch-exp{font-size:14.5px;line-height:1.5;color:var(--text2);margin:0 2px}
 .goal.press{cursor:pointer}.goal .gl-top>.i{width:16px;height:16px;color:var(--text3);flex:none}
 .sim-info{display:flex;gap:10px;align-items:flex-start;margin:14px 0 12px;padding:13px 14px;border-radius:16px;background:var(--fill);font-size:14px;line-height:1.45;color:var(--text2);animation:wrIn .35s var(--ease)}.sim-info>svg{width:18px;height:18px;flex:none;margin-top:1px;color:var(--text)}.sim-info b{display:block;color:var(--text);margin-bottom:2px}
+.txs{background:var(--card);border-radius:20px;box-shadow:var(--card-shadow);margin-top:12px;overflow:hidden}
+.txs-h{width:100%;display:flex;align-items:center;gap:12px;padding:16px 16px;text-align:left;color:var(--text)}.txs-h>.i:first-child{width:21px;height:21px}
+.txs-t{flex:1;font-size:16.5px;font-weight:650}.txs-n{display:inline-flex;align-items:center;gap:4px;font-size:13px;font-weight:700;color:var(--text2);background:var(--fill);padding:4px 9px;border-radius:11px}.txs-n.ok{background:var(--ink);color:var(--on-ink)}.txs-n .i{width:12px;height:12px;stroke-width:2.6}
+.txs-c{width:16px;height:16px;color:var(--text3);transform:rotate(90deg);transition:transform .3s var(--ease)}.txs.open .txs-c{transform:rotate(-90deg)}
+.txs-b{display:none;padding:0 14px 16px}.txs.open .txs-b{display:block;animation:wrIn .3s var(--ease)}.txs-b .group{box-shadow:none;background:var(--fill)}
+.tx-chips{display:flex;flex-wrap:wrap;gap:8px}.tx-chips .chip{height:auto;min-height:34px;padding:7px 13px;white-space:normal;text-align:left;line-height:1.25}
+.txs.locked{opacity:.5}.txs.locked .txs-h{cursor:default}.txs-t small{display:block;font-size:12.5px;font-weight:500;color:var(--text2);margin-top:1px}
+.txs.done:not(.open) .txs-h>.i:first-child{color:var(--text2)}
+.tx-row{flex-wrap:wrap;gap:0}.tx-hit{display:flex;gap:12px;flex:1;min-width:0;align-items:flex-start;text-align:left;color:inherit;padding:0}.tx-hit:disabled{cursor:default}.tx-row.locked .tx-hit{opacity:.5}
+.tx-clip{flex:none;width:34px;height:34px;margin:-4px -4px 0 6px;border-radius:17px;display:grid;place-items:center;color:var(--text2)}.tx-clip .i{width:17px;height:17px}.tx-clip:active{background:var(--fill2)}
+.tx-files{display:flex;flex-wrap:wrap;gap:6px;width:100%;padding-left:38px;margin-top:6px}
+.tx-file{display:inline-flex;align-items:center;gap:4px;height:24px;padding:0 9px;border-radius:12px;font-size:12px;font-weight:650;background:var(--gold-bg);color:var(--gold-t);max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;cursor:pointer}.tx-file .i{width:12px;height:12px;flex:none}
+.tx-row small{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.tx-z{display:block;font-style:normal;font-size:12.5px;font-weight:650;color:var(--text);margin-top:3px}
+.tx-wrap{white-space:normal}.tx-wrap small{white-space:normal}
+.tx-tips p{display:flex;gap:10px;align-items:flex-start;margin:0 0 8px;font-size:14px;line-height:1.4;color:var(--text2)}.tx-tips .i{width:16px;height:16px;flex:none;margin-top:2px;color:var(--gold-t)}
+.tx-skip{display:block;margin:12px auto 0;font-size:14px;font-weight:600;color:var(--text2);text-decoration:underline;text-underline-offset:3px}
+.txd-row{display:flex;align-items:center;gap:12px;width:100%;margin-top:8px;padding:12px 16px;border-radius:16px;background:var(--card);text-align:left;color:var(--text)}.txd-row>.i{width:18px;height:18px;color:var(--gold-t);flex:none}
+.txd-row span{flex:1;min-width:0}.txd-row b{display:block;font-size:15px}.txd-row small{display:block;font-size:13px;color:var(--text2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.txd-row em{font-style:normal;font-size:13px;font-weight:650;color:var(--text2)}
+.tx-next{display:flex;gap:8px;align-items:flex-start;margin:14px 4px 0;font-size:13.5px;line-height:1.4;color:var(--text3)}.tx-next .i{width:14px;height:14px;flex:none;margin-top:2px}
+.tx-help{margin-top:20px;padding:14px 16px;border-radius:18px;background:var(--fill);display:flex;flex-wrap:wrap;gap:8px;align-items:center}.tx-help b{width:100%;font-size:15px}
+.tx-help a{display:inline-flex;align-items:center;gap:5px;height:32px;padding:0 12px;border-radius:16px;background:var(--card);color:var(--text);font-size:13.5px;font-weight:600;text-decoration:none}.tx-help a .i{width:14px;height:14px}.tx-help small{width:100%;font-size:12.5px;color:var(--text2)}
+.tx-years{margin:0 -18px 4px;padding:0 18px}.tx-row .ck{white-space:normal;line-height:1.3}.tx-years .chip small{font-weight:500;opacity:.75}
+.tx-hero{text-align:left}.tx-hk{display:flex;align-items:center;justify-content:space-between;font-size:13px;font-weight:650;opacity:.75}.tx-pc{display:flex;align-items:center;gap:6px}.tx-pc b{font-size:13px}
+.tx-ring{width:26px;height:26px;transform:rotate(-90deg)}.tx-ring circle{fill:none;stroke:currentColor;stroke-width:5;opacity:.18}.tx-ring circle+circle{opacity:1;stroke-linecap:round;transition:stroke-dasharray .5s var(--ease)}
+.tx-ht{font-size:23px;font-weight:750;letter-spacing:-.02em;line-height:1.2;margin:8px 0 4px}
+.tx-go{margin-top:14px;display:inline-flex;align-items:center;gap:6px;height:38px;padding:0 16px;border-radius:19px;background:var(--bg);color:var(--text);font-weight:650;font-size:15px}.tx-go .i{width:15px;height:15px}
+.tx-f{flex:none;min-width:74px;font-size:12.5px;font-weight:750;padding:5px 8px;border-radius:9px;background:var(--ink);color:var(--on-ink);text-align:center;align-self:flex-start;margin-top:2px}
 .tx-me{background:var(--gold-bg)}.tx-me .ck,.tx-me .cv{color:var(--gold-t);font-weight:700}
 .tx-steps .cell{align-items:flex-start;padding-top:12px;padding-bottom:12px}.tx-n{width:26px;height:26px;border-radius:13px;background:var(--fill2);display:grid;place-items:center;font-size:13px;font-weight:700;flex:none}.tx-n.on{background:var(--ink);color:var(--on-ink)}.tx-n .i{width:14px;height:14px}
 .tx-steps small{white-space:normal;line-height:1.4}.tx-steps small b{display:block;color:var(--text);margin-top:3px}
@@ -969,10 +997,11 @@ html[data-theme="dark"] .badge{color:#000}
 .rp-two{display:grid;grid-template-columns:1fr 1fr;gap:22px}
 .rp-foot{position:absolute;left:50px;right:50px;bottom:22px;display:flex;justify-content:space-between;color:#8a8275;font-size:10px;border-top:1px solid #ece6da;padding-top:8px}
 @media print{@page{size:A4;margin:0}
-  html.printing,html.printing body{background:#fff!important;height:auto!important;overflow:visible!important}
+  html.printing,html.printing body{background:#fff!important;height:auto!important;min-height:0!important;overflow:visible!important;position:static!important;inset:auto!important;transform:none!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  html.printing body>*:not(#report){display:none!important}
   html.printing #app,html.printing #sheets,html.printing #toast,html.printing .push,html.printing #auth,html.printing #drawer,html.printing #fab,html.printing #onb{display:none!important}
-  html.printing #report{position:static;overflow:visible;padding:0;background:#fff}html.printing #report .rp-wrap{transform:none!important;width:auto;height:auto!important}
-  html.printing .rp-page{box-shadow:none;width:210mm;min-height:297mm;margin:0;page-break-after:always}html.printing .rp-page+.rp-page{margin-top:0}.noprint{display:none!important}}
+  html.printing #report{position:static!important;inset:auto!important;overflow:visible!important;padding:0!important;background:#fff!important;display:block!important}html.printing #report .rp-wrap{transform:none!important;width:auto!important;height:auto!important;margin:0!important}
+  html.printing .rp-page{box-shadow:none;width:210mm;min-height:296mm;margin:0;overflow:hidden;page-break-after:always;break-after:page}html.printing .rp-page:last-child{page-break-after:auto;break-after:auto}html.printing .rp-page+.rp-page{margin-top:0}.noprint{display:none!important}}
 /* assistant */
 .chat{display:flex;flex-direction:column;gap:8px;margin:10px 0}
 .msg{max-width:86%;padding:11px 14px;border-radius:18px 18px 18px 6px;background:var(--card);box-shadow:var(--card-shadow);font-size:15.5px;line-height:1.4;align-self:flex-start}
@@ -1197,6 +1226,8 @@ html,body{touch-action:manipulation}
 /* ---------- connexion ---------- */
 #auth{position:fixed;inset:0;z-index:38;background:var(--bg);color:var(--text);overflow-y:auto;-webkit-overflow-scrolling:touch;transition:opacity .4s,transform .4s var(--ease)}
 #auth.out{opacity:0;transform:scale(1.04);pointer-events:none}
+.au-back{position:fixed;z-index:2;top:calc(var(--safe-t) + 10px);left:12px;display:flex;align-items:center;gap:2px;height:40px;padding:0 12px 0 6px;border-radius:20px;background:var(--fill);font-size:16px;font-weight:600;color:var(--text)}.au-back .i{width:20px;height:20px;transform:rotate(180deg);stroke-width:2.4}
+.au-back~.au-wrap{padding-top:calc(var(--safe-t) + 70px)}
 .au-wrap{max-width:420px;margin:0 auto;padding:calc(var(--safe-t) + 34px) 22px calc(var(--safe-b) + 28px);min-height:100%;display:flex;flex-direction:column}
 .au-logo{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:26px}
 .au-logo svg{width:44px;height:30px;overflow:visible}
@@ -1404,7 +1435,7 @@ html.booting #app{opacity:0}
 /* ================= données ================= */
 const SEED=/*SEED*/null;
 const KEY="finora.v2";
-const VERSION="8.9";
+const VERSION="9.2.3";
 const TYPES={dep:{l:"Dépense",s:-1},rem:{l:"Rémunération",s:1},tro:{l:"Transfert envoyé",s:-1},tri:{l:"Transfert reçu",s:1},plo:{l:"Placement envoyé",s:-1},pli:{l:"Placement récupéré",s:1}};
 const TYPE_FROM_LABEL={"Dépense":"dep","Rémunération":"rem","Transfert envoyé":"tro","Transfert reçu":"tri","Placement envoyé":"plo","Placement récupéré":"pli"};
 const KIND_OF={dep:"dep",rem:"rem",tro:"tr",tri:"tr",plo:"pl",pli:"pl"};
@@ -1631,7 +1662,11 @@ pages.forEach(p=>{p.inert=!p.classList.contains("active");p.addEventListener("sc
 //  - parti ailleurs, vers la droite : retour à l'écran d'avant (jamais depuis l'accueil, c'est le point de départ)
 //  - vers la gauche : on revient à l'écran qu'on vient de quitter (en avant)
 const ZONE=()=>Math.max(64,innerWidth/4);
-const NOSWIPE=".hscroll,.sugg,.dates,input,textarea,select,.chart,.noswipe,.lsvg,.w52,.plans,.pl-tw";
+const NOSWIPE="input,textarea,select,.chart,.noswipe,.lsvg,.w52";
+// zone qui défile de côté (cartes des offres, tableau, listes de puces…) : elle défile d'abord ;
+// le retour n'est possible que si le geste démarre alors qu'elle est déjà revenue tout au début
+function hScroller(t){for(let n=t;n&&n!==document.body;n=n.parentElement){if(!(n instanceof Element))continue;if(n.scrollWidth>n.clientWidth+2){const ox=getComputedStyle(n).overflowX;if(ox==="auto"||ox==="scroll")return n}}return null}
+const hsBlocks=(hs,dx)=>!!hs&&(dx<0||hs.scrollLeft>1);
 // écrans refermés par un retour, dans l'ordre : glisser vers la gauche les rouvre un par un
 let FWDS=[],FWD_OPENING=false;
 const fwdHas=()=>FWDS.length>0;
@@ -1649,13 +1684,13 @@ function fwdEnd(st,v){const p=st.pf;if(!p)return;const el=p.el,W=innerWidth;
   const el=$("pages");let s=null;
   el.addEventListener("pointerdown",e=>{
     if(navAnim||e.button>0||e.target.closest(NOSWIPE))return;
-    s={x:e.clientX,y:e.clientY,id:e.pointerId,mode:0,zone:e.clientX<=ZONE(),hist:[[e.clientX,performance.now()]]};
+    s={x:e.clientX,y:e.clientY,id:e.pointerId,mode:0,zone:e.clientX<=ZONE(),hs:hScroller(e.target),hist:[[e.clientX,performance.now()]]};
   });
   el.addEventListener("pointermove",e=>{
     if(!s||e.pointerId!==s.id)return;
     const dx=e.clientX-s.x,dy=e.clientY-s.y;
     if(!s.mode){
-      if(Math.abs(dx)>12&&Math.abs(dx)>Math.abs(dy)*1.3){s.mode=1;try{el.setPointerCapture(e.pointerId)}catch(_){}document.activeElement&&document.activeElement.blur&&document.activeElement.blur()}
+      if(Math.abs(dx)>12&&Math.abs(dx)>Math.abs(dy)*1.3){if(hsBlocks(s.hs,dx)){s=null;return}s.mode=1;try{el.setPointerCapture(e.pointerId)}catch(_){}document.activeElement&&document.activeElement.blur&&document.activeElement.blur()}
       else if(Math.abs(dy)>12){s=null;return}
       else return;
     }
@@ -2541,6 +2576,7 @@ async function startCloud(){
   if(session){USER=session.user;await afterLogin();return}
   // hors ligne mais déjà connecté sur ce téléphone : on continue avec les données du téléphone
   if(S.owner&&!navigator.onLine)return;
+  if(DEV_LOCAL)return;
   authShow("login",urlErr?{err:"Connexion annulée ou impossible. Réessaie."}:{});
 }
 document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")cloudPull();else if(S.dirty)pushNow()});
@@ -2657,7 +2693,7 @@ setInterval(updSyncUI,30000);
 
 /* ---------- écran de connexion ---------- */
 const AUTH={view:"login",email:"",err:"",notice:"",lockUntil:0,resendAt:0};
-function authShow(v,o={}){Object.assign(AUTH,{err:"",notice:""},o,{view:v});const el=$("auth");el.hidden=false;el.classList.remove("out");renderAuth()}
+function authShow(v,o={}){const wasOpen=!$("auth").hidden;const back=o.back!==undefined?o.back:(wasOpen?!!AUTH.back:false);Object.assign(AUTH,{err:"",notice:""},o,{view:v,back});const el=$("auth");el.hidden=false;el.classList.remove("out");renderAuth()}
 function authHide(){const el=$("auth");if(el.hidden)return;el.classList.add("out");setTimeout(()=>{el.hidden=true;el.classList.remove("out");el.innerHTML=""},420)}
 const authField=(id,label,type,ph,val="",ac="")=>`<label class="af"><span>${label}</span><span class="af-in"><input id="${id}" type="${type}" placeholder="${ph}" value="${esc(val)}" autocomplete="${ac}" autocapitalize="off" spellcheck="false" ${type==="email"?'inputmode="email"':""}>${type==="password"?`<button type="button" class="af-eye" data-eye="${id}" aria-label="Afficher le mot de passe">${icon("eye")}</button>`:""}</span></label>`;
 const pwChecks=id=>`<ul class="pwrules" id="${id}">${PW_RULES.map(r=>r[0]).concat("Les deux mots de passe sont identiques").map(t=>`<li><span class="pr-ic">${icon("check")}</span>${t}</li>`).join("")}</ul>`;
@@ -2692,7 +2728,7 @@ function renderAuth(){
     ${pwChecks("auRules")}<button class="primary" id="auGo" type="submit" disabled>Changer mon mot de passe</button></form>`;
   else if(v==="offline")body=`<div class="au-big">${icon("wifi")}</div><h2 class="au-h">Pas de connexion internet</h2><p class="au-sub">Il faut internet pour te connecter la première fois. Ensuite, Zerly marche aussi hors ligne.</p>
     <button type="button" class="primary" id="auRetry">Réessayer</button>`;
-  el.innerHTML=`<div class="au-wrap">${head}${body}<p class="au-foot"><a href="confidentialite.html" target="_blank" rel="noopener">Confidentialité</a> · <a href="conditions.html" target="_blank" rel="noopener">Conditions</a> · <a href="mentions-legales.html" target="_blank" rel="noopener">Mentions légales</a></p></div>`;
+  el.innerHTML=`${AUTH.back?`<button class="au-back" id="auBack">${icon("chev")}Retour</button>`:""}<div class="au-wrap">${head}${body}<p class="au-foot"><a href="confidentialite.html" target="_blank" rel="noopener">Confidentialité</a> · <a href="conditions.html" target="_blank" rel="noopener">Conditions</a> · <a href="mentions-legales.html" target="_blank" rel="noopener">Mentions légales</a></p></div>`;
   bindAuth();
 }
 function authErr(t){AUTH.err=t;const e=$("auErr");if(!e)return;e.hidden=!t;e.querySelector("span").textContent=t;if(t)shake(e)}
@@ -2712,6 +2748,7 @@ async function botToken(){
 async function botOr(msg){try{return {t:await botToken()}}catch(e){authBusy(false);authErr(navigator.onLine?msg||"La vérification anti-robot n'a pas marché. Réessaie.":"Pas de connexion internet.");return null}}
 function bindAuth(){
   const el=$("auth"),q=s=>el.querySelector(s),v=AUTH.view;
+  const bk=q("#auBack");if(bk)bk.onclick=()=>{AUTH.back=false;authHide()};
   el.querySelectorAll("[data-av]").forEach(b=>b.onclick=()=>{const e=q("#auEmail");authShow(b.dataset.av,{email:e?e.value.trim():AUTH.email})});
   el.querySelectorAll("[data-eye]").forEach(b=>b.onclick=()=>{const i=q("#"+b.dataset.eye),show=i.type==="password";i.type=show?"text":"password";b.innerHTML=icon(show?"eyeoff":"eye");b.setAttribute("aria-label",show?"Cacher le mot de passe":"Afficher le mot de passe")});
   el.querySelectorAll("[data-oauth]").forEach(b=>b.onclick=async()=>{authErr("");if(!SB){authErr("Un instant, Zerly se prépare…");return}if(!navigator.onLine){authErr("Pas de connexion internet.");return}
@@ -2792,6 +2829,17 @@ const THUMBS=new Map();
 const docsOf=opId=>(S.docs||[]).filter(d=>d.opId===opId);
 const hasDoc=opId=>(S.docs||[]).some(d=>d.opId===opId);
 const isPdf=d=>/pdf/i.test(d.type)||/\.pdf$/i.test(d.name);
+// types de documents : une facture, mais aussi une fiche de paie, un papier d'impôts, une attestation Urssaf…
+const DOC_KINDS=[["facture","Facture","receipt"],["paie","Fiche de paie","brief"],["impot","Impôts","file"],["urssaf","Urssaf","shield"],["attest","Attestation","check"],["autre","Autre","dots"]];
+const docKind=d=>DOC_KINDS.find(k=>k[0]===(d.kind||"facture"))||DOC_KINDS[0];
+// type proposé selon l'opération : un salaire → fiche de paie, l'Urssaf → attestation Urssaf…
+function kindForOp(o){if(!o)return "facture";const n=norm(o.l+" "+(o.c||""));
+  if(o.t==="rem"&&(o.c==="Salaire"||/salaire|paie|paye/.test(n)))return "paie";
+  if(/urssaf|cotisation sociale/.test(n))return "urssaf";
+  if(/impot|dgfip|taxe fonciere|taxe d.habitation|prelevement a la source/.test(n))return "impot";
+  if(o.t==="rem"&&(o.c==="Allocations & chômage"||o.c==="Retraite & pension"||/caf|cpam|france travail|pole emploi/.test(n)))return "attest";
+  return "facture"}
+const opDocWord=o=>({paie:"la fiche de paie",urssaf:"l'attestation Urssaf",impot:"le document d'impôts",attest:"l'attestation"})[kindForOp(o)]||"une facture";
 function cleanDocs(){const ids=new Set(S.ops.map(o=>o.id));for(const d of S.docs||[])if(d.opId&&!ids.has(d.opId))d.opId=null}
 const norm=s=>String(s==null?"":s).normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
 function loadImg(file){return new Promise((res,rej)=>{const u=URL.createObjectURL(file),i=new Image();i.onload=()=>{URL.revokeObjectURL(u);res(i)};i.onerror=()=>{URL.revokeObjectURL(u);rej(new Error("img"))};i.src=u})}
@@ -2814,15 +2862,15 @@ async function prepFile(file){
   throw new Error("Seules les photos et les PDF sont acceptés");
 }
 function chooseFiles(){return new Promise(res=>{const inp=$("docFile");inp.value="";inp.onchange=()=>res([...inp.files]);inp.click()})}
-async function addDocs(files,opId){
-  const added=[];
+async function addDocs(files,opId,kind,extra){
+  const added=[],o=opId&&S.ops.find(x=>x.id===opId);kind=kind||kindForOp(o);
   for(const f of files){
     try{if(/pdf/i.test(f.type)||/\.pdf$/i.test(f.name))toast("Préparation du PDF…");
       const p=await prepFile(f);const id="d"+uid();await fput(id,{blob:p.blob,thumb:p.thumb,pages:p.pages||null,total:p.total||0});if(p.thumb)THUMBS.set(id,p.thumb);
-      S.docs.push({id,opId:opId||null,name:f.name||"Facture",type:p.type,size:p.size,added:todayISO(),pv:p.thumb?1:0});added.push(id)}
+      S.docs.push(Object.assign({id,opId:opId||null,name:f.name||docKind({kind})[1],type:p.type,size:p.size,added:todayISO(),pv:p.thumb?1:0,kind},extra||{}));added.push(id)}
     catch(e){toast(e&&e.message&&!/img/.test(e.message)?e.message:"Impossible de lire « "+(f.name||"ce fichier")+" »")}
   }
-  if(added.length){save();renderAll();toast(added.length>1?added.length+" factures ajoutées":"Facture ajoutée")}
+  if(added.length){save();renderAll();toast(added.length>1?added.length+" documents ajoutés":"Document ajouté")}
   return added;
 }
 // miniatures chargées après l'affichage
@@ -2831,15 +2879,17 @@ function hydrateThumbs(root){
     if(THUMBS.has(id)){img.src=THUMBS.get(id);return}
     fget(id).then(v=>{if(v&&v.thumb){THUMBS.set(id,v.thumb);img.src=v.thumb}}).catch(()=>{})});
 }
-function docTitle(d){if(d.title)return d.title;const o=d.opId&&S.ops.find(x=>x.id===d.opId);return o?(o.l||o.c||TYPES[o.t].l):d.name.replace(/\.[a-z0-9]+$/i,"")}
+function docTitle(d){if(d.title)return d.title;const o=d.opId&&S.ops.find(x=>x.id===d.opId);
+  if(o&&d.kind==="paie"){const dt=pd(o.d);return "Fiche de paie · "+MONTHS[dt.getMonth()]+" "+dt.getFullYear()}
+  return o?(o.l||o.c||TYPES[o.t].l):d.name.replace(/\.[a-z0-9]+$/i,"")}
 function docCard(d){
   const o=d.opId&&S.ops.find(x=>x.id===d.opId);
   return `<button class="doc press" data-doc="${d.id}"><span class="dthumb">${isPdf(d)&&!d.pv?`<span class="dpdf">${icon("file")}<b>PDF</b></span>`:`<img data-thumb="${d.id}" alt="Aperçu de la facture ${esc(docTitle(d))}">${isPdf(d)?`<i class="dbadge">PDF</i>`:""}`}</span>
-    <span class="dmeta"><b>${esc(docTitle(d))}</b>${o?`<small class="num">${sv(o)<0?"−":"+"}${eurAbs(sv(o))} · ${shortDate(o.d)}</small><small>${esc(o.c||TYPES[o.t].l)} · ${esc(accName(o.a))}</small>`:`<small class="dfree">${icon("link")}Pas liée à une opération</small>`}</span></button>`;
+    <span class="dmeta">${(d.kind||"facture")!=="facture"?`<i class="dkind">${icon(docKind(d)[2])}${docKind(d)[1]}</i>`:""}<b>${esc(docTitle(d))}</b>${o?`<small class="num">${sv(o)<0?"−":"+"}${eurAbs(sv(o))} · ${shortDate(o.d)}</small><small>${esc(o.c||TYPES[o.t].l)} · ${esc(accName(o.a))}</small>`:`<small class="dfree">${icon("link")}Pas liée à une opération</small>`}</span></button>`;
 }
 document.addEventListener("click",e=>{const b=e.target.closest("[data-doc]");if(b)openDoc(b.dataset.doc)});
 function docHay(d){
-  const o=d.opId&&S.ops.find(x=>x.id===d.opId);let h=(d.title||"")+" "+d.name+" facture "+(isPdf(d)?"pdf":"photo");
+  const o=d.opId&&S.ops.find(x=>x.id===d.opId);let h=(d.title||"")+" "+d.name+" "+docKind(d)[1]+" "+(d.kind==="paie"?"bulletin salaire paye":d.kind==="impot"?"impot avis declaration":d.kind==="urssaf"?"urssaf attestation":"facture")+" "+(isPdf(d)?"pdf":"photo");
   if(o){const dt=pd(o.d);h+=" "+o.l+" "+o.c+" "+o.n+" "+accName(o.a)+" "+TYPES[o.t].l+" "+String(o.m).replace(".",",")+" "+o.m+" "+fmtN.format(o.m)+" "+o.d.split("-").reverse().join("/")+" "+MONTHS[dt.getMonth()]+" "+dt.getFullYear()}
   return norm(h);
 }
@@ -2854,8 +2904,10 @@ async function openDoc(id){
     <div class="dview" id="dvBox"><div class="empty">Chargement…</div></div>
     <div class="group" style="margin-top:12px"><label class="cell">${icon("pen")}<span class="ck">Nom</span><input id="dvName" value="${esc(d.title||"")}" placeholder="${esc(docTitle(Object.assign({},d,{title:""})))}" autocomplete="off" enterkeyhint="done"></label></div>
     <p class="sub" style="margin:10px 4px 14px">${esc(d.name)} · ${(d.size/1024>1024?(d.size/1048576).toFixed(1).replace(".",",")+" Mo":Math.max(1,Math.round(d.size/1024))+" Ko")} · ajoutée ${onDate(d.added)}</p>
+    <div class="fl">Type de document</div>
+    <div class="hscroll" id="dvKind">${DOC_KINDS.map(k=>`<button class="chip ${docKind(d)[0]===k[0]?"on":""}" data-dk="${k[0]}">${k[1]}</button>`).join("")}</div>
     <div class="fl">Opération associée</div>
-    ${o?`<div class="ops">${opRow(o)}</div>`:`<div class="card"><div class="empty">Cette facture n'est liée à aucune opération</div></div>`}
+    ${o?`<div class="ops">${opRow(o)}</div>`:`<div class="card"><div class="empty">Ce document n'est lié à aucune opération</div></div>`}
     <div class="acts" style="grid-template-columns:repeat(4,1fr)"><button class="act" id="dvOpen">${icon("up")}Ouvrir</button><button class="act" id="dvShare">${icon("share")}Partager</button><button class="act" id="dvLink">${icon("link")}${o?"Changer":"Lier"}</button><button class="act danger" id="dvDel">${icon("trash")}Supprimer</button></div>`,
   {onClose:()=>{setTimeout(()=>{if(document.querySelector(".viewer"))return;if(url)URL.revokeObjectURL(url);pageUrls.forEach(u=>u!==url&&URL.revokeObjectURL(u))},1000)},mount:(w,close)=>{
     fget(id).then(v=>{const box=w.querySelector("#dvBox");if(!v||!v.blob){box.innerHTML=`<div class="empty">Fichier introuvable sur ce téléphone</div>`;return}
@@ -2871,7 +2923,8 @@ async function openDoc(id){
     }).catch(()=>{w.querySelector("#dvBox").innerHTML=`<div class="empty">Impossible de lire ce fichier</div>`});
     const nm=w.querySelector("#dvName");nm.onkeydown=e=>{if(e.key==="Enter")nm.blur()};nm.onchange=()=>{d.title=nm.value.trim();save();renderAll()};
     w.querySelector("#dvLink").onclick=()=>{close();setTimeout(()=>linkDoc(id),300)};
-    w.querySelector("#dvDel").onclick=async()=>{close();if(await ask("Supprimer cette facture ?","Le fichier sera effacé de ton téléphone. L'opération, elle, reste.","Supprimer",true)){S.docs=S.docs.filter(x=>x.id!==id);THUMBS.delete(id);fdel(id).catch(()=>{});save();renderAll();toast("Facture supprimée")}};
+    w.querySelector("#dvKind").onclick=e=>{const b=e.target.closest("[data-dk]");if(!b)return;d.kind=b.dataset.dk;save();renderAll();w.querySelectorAll("#dvKind .chip").forEach(x=>x.classList.toggle("on",x===b))};
+    w.querySelector("#dvDel").onclick=async()=>{close();if(await ask("Supprimer ce document ?","Le fichier sera effacé. L'opération, elle, reste.","Supprimer",true)){S.docs=S.docs.filter(x=>x.id!==id);THUMBS.delete(id);fdel(id).catch(()=>{});save();renderAll();toast("Document supprimé")}};
     w.addEventListener("click",e=>{if(e.target.closest("[data-op]"))close()});
   }});
 }
@@ -3582,6 +3635,11 @@ function insights0(){
   if(tis.length>4)add("todo","swap",`${tis.length-4} autre${tis.length>5?"s":""} virement${tis.length>5?"s":""} à vérifier`,`Regarde les transferts dans l'onglet Opérations.`,{l:"Voir les transferts",fn:()=>{opsFilter.type="tr";opsFilter.acc="all";go(PG.ops)}});
   const lb=S.lastBackup?Math.round((pd(todayISO())-pd(S.lastBackup))/864e5):null;
   if(!cloudOn()&&S.ops.length&&(lb==null||lb>30))add("todo","down",lb==null?"Fais ta première sauvegarde":"Pense à refaire une sauvegarde",lb==null?"Tes données ne sont que sur ce téléphone : une sauvegarde te protège si tu le perds ou le changes.":`Ta dernière sauvegarde date de ${lb} jours.`,{l:"Sauvegarder",fn:backup});
+  // impôts : un rappel tant que la déclaration n'est pas signée (2 semaines avant l'ouverture → date limite)
+  {const TY=taxYear(),TD=taxDates(TY),dl=taxDeadline(TY),tst=((S.tax||{})[TY])||{},t0=todayISO();
+    if(!(tst.steps&&tst.steps.signer)&&t0>=addDays(TD.ouverture,-14)&&t0<=dl){const left=daysBetween(t0,dl);
+      add("todo","file",t0<TD.ouverture?`Impôts : la déclaration ouvre le ${dayMonth(TD.ouverture)}`:`Impôts : ${left?`plus que ${plural(left,"jour")}`:"c'est le dernier jour"} pour déclarer`,
+        t0<TD.ouverture?"Rassemble tes documents dès maintenant avec Zerly : tu seras prêt le jour J.":`Date limite : ${longDate(dl)}. Zerly t'accompagne étape par étape.`,{l:"Mes impôts",fn:()=>openTool("taxes")},"tax:decl")}}
   // --- attention
   for(const a of S.accounts){const b=balance(a.id);
     if(b<0)add("warn","alert",`${a.name} est à découvert`,`Solde : ${eur(b)}. Un transfert depuis un autre compte peut t'éviter des frais.`,{l:"Voir le compte",fn:()=>openAccountPage(a.id)},"neg:"+a.id);
@@ -3735,8 +3793,8 @@ function openOp(id){
       ${o.n?`<div class="cell">${icon("note")}<span class="ck">Note</span><span class="cv" style="white-space:normal;text-align:right">${esc(o.n)}</span></div>`:""}
       ${(()=>{if(o.t!=="dep"&&o.t!=="rem")return "";const r=recurring().find(x=>(x.ids||[]).includes(o.id));return r?`<button class="cell" id="oRec">${icon("repeat")}<span class="ck">${r.t==="rem"?"Rentrée régulière":"Abonnement"}</span><span class="cv">${esc(r.name)} · ${PER_TXT[r.per]}${icon("chev")}</span></button>`:`<button class="cell" id="oMkRec">${icon("repeat")}<span class="ck">C'est un abonnement ?</span><span class="cv">L'ajouter${icon("chev")}</span></button>`})()}
     </div>
-    <div class="fl">Facture</div>
-    <div class="docrow">${docsOf(o.id).concat(p?docsOf(p.id):[]).map(docCard).join("")}<button class="doc add press" id="oAddDoc"><span class="dthumb">${icon("plus")}</span><span class="dmeta"><b>Ajouter une facture</b><small>Photo ou PDF</small></span></button></div>
+    <div class="fl">Documents</div>
+    <div class="docrow">${docsOf(o.id).concat(p?docsOf(p.id):[]).map(docCard).join("")}<button class="doc add press" id="oAddDoc"><span class="dthumb">${icon("plus")}</span><span class="dmeta"><b>Ajouter ${opDocWord(o)}</b><small>Photo ou PDF</small></span></button></div>
     <div class="acts"><button class="act" id="oEdit">${icon("pen")}Modifier</button><button class="act" id="oDup">${icon("copy")}Dupliquer</button><button class="act danger" id="oDel">${icon("trash")}Supprimer</button></div>`,
   {mount:(w,close)=>{
     hydrateThumbs(w);
@@ -3929,7 +3987,7 @@ function renderForm(){
       <div class="dates" id="fDates"></div>
       <label class="cell">${icon("note")}<span class="ck">Note</span><input id="fNote" placeholder="Facultatif" value="${esc(f.note)}" autocomplete="off" enterkeyhint="done"></label>
       ${can("tags")&&f.kind!=="tr"?`<div class="cell">${icon("tag")}<span class="ck">Étiquettes</span></div><div class="ftags" id="fTags">${[...new Set(f.tags.concat(allTags().slice(0,8)))].map(g=>`<button type="button" class="chip ${f.tags.includes(g)?"on":""}" data-tg="${esc(g)}">${esc(g)}</button>`).join("")}<input id="fTagIn" placeholder="Nouvelle étiquette" enterkeyhint="done" autocomplete="off"></div>`:""}
-      <button class="cell" id="fDoc">${icon("clip")}<span class="ck">Facture</span><span class="cv">${(f.files||[]).length?`${f.files.length} fichier${f.files.length>1?"s":""} prêt${f.files.length>1?"s":""}`:f.mode==="edit"&&docsOf(f.ids[0]).length?`${docsOf(f.ids[0]).length} déjà jointe${docsOf(f.ids[0]).length>1?"s":""}`:"Ajouter"}${icon("chev")}</span></button>
+      <button class="cell" id="fDoc">${icon("clip")}<span class="ck">${f.kind==="rem"?"Fiche de paie ou justificatif":"Facture ou document"}</span><span class="cv">${(f.files||[]).length?`${f.files.length} fichier${f.files.length>1?"s":""} prêt${f.files.length>1?"s":""}`:f.mode==="edit"&&docsOf(f.ids[0]).length?`${docsOf(f.ids[0]).length} déjà jointe${docsOf(f.ids[0]).length>1?"s":""}`:"Ajouter"}${icon("chev")}</span></button>
     </div>
     ${!edit&&acc(f.acc)&&acc(f.acc).fees&&acc(f.acc).feeAmt>0?`<button class="feebtn press ${f.feeMode?"on":""}" id="fFee" type="button"><span class="ic">${icon("receipt")}</span><span class="fb-t"><b>Frais de compte · ${eurAbs(acc(f.acc).feeAmt)}</b><small>${f.feeMode?(f.kind==="rem"?"Remboursement de ta banque":"Prélèvement de ta banque")+" · touche pour annuler":"Remplit tout, puis choisis Dépense ou Rémunération en haut"}</small></span>${icon(f.feeMode?"check":"plus")}</button>`:""}
     <button class="primary" id="fSave">${icon("check")}${edit?"Enregistrer":"Ajouter"}</button>
@@ -4088,7 +4146,7 @@ function renderOps(){
   if(!root.dataset.built){
     root.dataset.built=1;
     root.innerHTML=`<div class="home-head"><h1 class="large">Opérations</h1><span id="oYear"></span></div>
-      <div class="seg2" id="oView"><span class="pill"></span><button data-v="ops">Opérations</button><button data-v="docs">Factures</button></div>
+      <div class="seg2" id="oView"><span class="pill"></span><button data-v="ops">Opérations</button><button data-v="docs">Documents</button></div>
       <label class="search">${icon("search")}<input id="oq" type="search" placeholder="Rechercher" autocomplete="off" enterkeyhint="search"></label>
       <div class="filters"><div class="hscroll" id="oAcc"></div><div class="hscroll" id="oType"></div></div>
       <div id="oList"></div>`;
@@ -4103,8 +4161,8 @@ function renderOps(){
   $("oYear").innerHTML=opsFilter.view==="docs"?"":yearPill();
   const vd=opsFilter.view==="docs",nd=(S.docs||[]).length;
   $("oView").querySelector(".pill").style.transform=`translateX(${vd?"100%":"0"})`;
-  $("oView").querySelectorAll("button").forEach(b=>{b.classList.toggle("on",b.dataset.v===opsFilter.view);if(b.dataset.v==="docs")b.textContent="Factures"+(nd?` (${nd})`:"")});
-  $("oq").placeholder=vd?"Chercher une facture : vélo, 771, mars…":"Chercher : Leclerc, boucher, 20, octobre…";
+  $("oView").querySelectorAll("button").forEach(b=>{b.classList.toggle("on",b.dataset.v===opsFilter.view);if(b.dataset.v==="docs")b.textContent="Documents"+(nd?` (${nd})`:"")});
+  $("oq").placeholder=vd?"Chercher : vélo, fiche de paie, impôts, mars…":"Chercher : Leclerc, boucher, 20, octobre…";
   $("oType").hidden=vd;
   $("oAcc").innerHTML=[`<button class="chip ${opsFilter.acc==="all"?"on":""}" data-fa="all">Tous les comptes</button>`].concat(S.accounts.map(a=>`<button class="chip ${opsFilter.acc===a.id?"on":""}" data-fa="${a.id}"><span class="mono">${esc(monoOf(a))}</span>${esc(a.name)}</button>`)).join("");
   $("oType").innerHTML=[["all","Tout"],["dep","Dépenses"],["rem","Rémunérations"],["tr","Transferts"],["pl","Placements"]].map(([k,l])=>`<button class="chip ${opsFilter.type===k?"on":""}" data-ft="${k}">${l}</button>`).join("");
@@ -4131,16 +4189,23 @@ function listOps(){
 
 function listDocs(){
   const q=opsFilter.q.trim();
+  const dk=opsFilter.dk||"all";
   const list=(S.docs||[]).filter(d=>{
+    if(dk!=="all"&&docKind(d)[0]!==dk)return false;
     if(opsFilter.acc!=="all"){const o=d.opId&&S.ops.find(x=>x.id===d.opId);if(!o||o.a!==opsFilter.acc)return false}
     return !q||matchQ(docHay(d),q);
   }).sort((a,b)=>{const oa=a.opId&&S.ops.find(x=>x.id===a.opId),ob=b.opId&&S.ops.find(x=>x.id===b.opId);const da=oa?oa.d:a.added,db=ob?ob.d:b.added;return da<db?1:da>db?-1:0});
   const root=$("oList");
-  root.innerHTML=`<button class="primary" id="dAdd" style="margin:14px 0 4px">${icon("receipt")}Importer une facture</button>
-    <p class="hint" style="margin-top:6px">Zerly lit le montant, la date et le nom, puis la range avec la bonne opération (ou la crée).</p>
-    <div class="count">${list.length} facture${list.length>1?"s":""}${q?" trouvée"+(list.length>1?"s":""):""}</div>
-    ${list.length?`<div class="docgrid">${list.map(docCard).join("")}</div>`:`<div class="empty" style="padding-top:40px">${(S.docs||[]).length?"Aucune facture ne correspond":"Aucune facture pour l'instant.<br>Ajoute la photo ou le PDF d'un achat : tu la retrouveras ici en tapant juste un mot."}</div>`}`;
+  const kinds=DOC_KINDS.filter(k=>(S.docs||[]).some(d=>docKind(d)[0]===k[0]));
+  root.innerHTML=`<div class="pacts" style="margin:14px 0 4px"><button class="primary" id="dAdd">${icon("receipt")}Une facture</button><button class="primary alt" id="dAdd2">${icon("file")}Un autre document</button></div>
+    <p class="hint" style="margin-top:6px">Une facture : Zerly lit le montant, la date et le nom, puis la range avec la bonne opération. Un autre document : fiche de paie, avis d'impôt, attestation Urssaf…</p>
+    ${kinds.length>1?`<div class="hscroll" id="dKinds" style="margin-top:10px"><button class="chip ${dk==="all"?"on":""}" data-dkf="all">Tout</button>${kinds.map(k=>`<button class="chip ${dk===k[0]?"on":""}" data-dkf="${k[0]}">${k[1]}</button>`).join("")}</div>`:""}
+    <div class="count">${list.length} document${list.length>1?"s":""}${q?" trouvé"+(list.length>1?"s":""):""}</div>
+    ${list.length?`<div class="docgrid">${list.map(docCard).join("")}</div>`:`<div class="empty" style="padding-top:40px">${(S.docs||[]).length?"Aucun document ne correspond":"Aucun document pour l'instant.<br>Ajoute une facture, une fiche de paie ou un papier d'impôts : tu le retrouveras ici en tapant juste un mot."}</div>`}`;
   $("dAdd").onclick=()=>addDocFlow(null);
+  $("dAdd2").onclick=async()=>{const k=await pick("Quel document ?",DOC_KINDS.filter(x=>x[0]!=="facture").map(x=>({label:x[1],value:x[0],icon:icon(x[2])})));if(!k)return;
+    const files=await chooseFiles();if(!files.length)return;const ids=await addDocs(files,null,k);if(ids.length===1)setTimeout(()=>openDoc(ids[0]),350)};
+  const dkr=$("dKinds");if(dkr)dkr.onclick=e=>{const b=e.target.closest("[data-dkf]");if(!b)return;opsFilter.dk=b.dataset.dkf;listDocs()};
   hydrateThumbs(root);
 }
 
@@ -4169,7 +4234,12 @@ function renderProfile(){
       <button class="cell" id="pLogout">${icon("out")}<span class="ck">Se déconnecter</span>${icon("chev","chev")}</button>
       <button class="cell danger" id="pDelAcc">${icon("trash")}<span class="ck">Supprimer mon compte</span>${icon("chev","chev")}</button>
     </div>
-    <p class="hint" style="text-align:left;margin-top:8px">Tes données sont sauvegardées automatiquement sur ton compte : tu les retrouves en te connectant sur un autre appareil.</p>`:""}
+    <p class="hint" style="text-align:left;margin-top:8px">Tes données sont sauvegardées automatiquement sur ton compte : tu les retrouves en te connectant sur un autre appareil.</p>`:CLOUD_ON?`<div class="sec">Mon compte</div>
+    <div class="group">
+      <div class="cell">${icon("user")}<span class="ck cm-n" style="white-space:normal">Tu n'es pas connecté<small style="white-space:normal;line-height:1.35">Connecte-toi pour sauvegarder tes données et les retrouver sur tous tes appareils.</small></span></div>
+      <button class="cell" id="pLogin">${icon("lock")}<span class="ck">Se connecter</span>${icon("chev","chev")}</button>
+      <button class="cell" id="pSignup">${icon("plus")}<span class="ck">Créer un compte</span>${icon("chev","chev")}</button>
+    </div>`:""}
     <div class="sec">Sécurité et offre</div>
     <div class="group"><button class="cell" id="pMenu">${icon("list")}<span class="ck">Menu</span><span class="cv">${(S.settings.hideTools||[]).length?plural((S.settings.hideTools||[]).length,"menu")+" caché"+((S.settings.hideTools||[]).length>1?"s":""):"Tout affiché"}${icon("chev")}</span></button></div>
     <div class="group"><button class="cell" id="pNotif">${icon("bell")}<span class="ck">Notifications</span><span class="cv">${notifOn()?"Activées · "+nset().hour+" h":"Désactivées"}${icon("chev")}</span></button><button class="cell" id="pLock">${icon("lock")}<span class="ck">Verrouillage</span><span class="cv">${S.lock&&S.lock.on?(S.lock.cred?"Face ID et code":"Code"):"Désactivé"}${icon("chev")}</span></button>
@@ -4197,6 +4267,9 @@ function renderProfile(){
     <div class="legal">${[["confidentialite.html","Confidentialité"],["cookies.html","Cookies"],["conditions.html","Conditions d'utilisation"],["mentions-legales.html","Mentions légales"],["accessibilite.html","Accessibilité"]].map(([h,l])=>`<a href="${h}">${l}${icon("chev")}</a>`).join("")}</div>
     <p class="foot">Zerly ${VERSION} — gratuit, sans publicité, sans cookie.<br>${cloudOn()?"Tes données sont sauvegardées sur ton compte et restent disponibles sans internet.":"Tes données restent sur ce téléphone, même sans internet."}</p>`;
   $("pAv").onclick=photoMenu;$("pLock").onclick=openLockSettings;$("pNotif").onclick=openNotifSettings;$("pMenu").onclick=openMenuSettings;$("pCur").onclick=chooseBase;$("pPlan").onclick=openMyPlan;
+  // pas connecté : on peut se (re)connecter depuis les Paramètres
+  const pli=$("pLogin");if(pli){const go=async v=>{if(!navigator.onLine){toast("Pas de connexion internet");return}if(!SB){toast("Un instant…");await startCloud();if(cloudOn()){renderAll();return}}authShow(v,{email:AUTH.email||"",back:true})};
+    pli.onclick=()=>go("login");$("pSignup").onclick=()=>go("signup")}
   if(cloudOn()){$("pLogout").onclick=logout;$("pDelAcc").onclick=deleteMyAccount;$("pSync").onclick=()=>{pushNow();cloudPull()};updSyncUI()}
   $("pCats").onclick=()=>openCatsManager();
   const nm=(id,key)=>{const el=$(id);el.oninput=()=>{S.profile[key]=el.value.trim();save()};el.onchange=()=>{renderHome();const n=document.querySelector("#profile .pn");if(n)n.textContent=(S.profile.first+" "+S.profile.last).trim()||"Ton nom"};el.onkeydown=e=>{if(e.key==="Enter")el.blur()}};
@@ -4411,18 +4484,20 @@ const FEAT_NAME={accounts:"Comptes bancaires illimités",imports:"Imports illimi
   wrapped:"Bilans du mois et de l'année",report:"Rapport PDF",shared:"Dépenses partagées",bank:"Synchronisation bancaire"};
 // tant que le paiement n'est pas branché, tout est débloqué ; « Mode test » permet de voir chaque offre
 const PAY_ON=CLOUD_ON&&!!CLOUD.stripe;
+// aperçu sur ton ordinateur (localhost) : pas d'écran de connexion au démarrage. Les offres restent en Gratuit (seuls les codes test débloquent)
+const DEV_LOCAL=/^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname);
 const SUB_LIVE=["active","trialing","past_due"];
-const tier=()=>{if(!PAY_ON)return (S.settings&&S.settings.tier)||"plus";
-  const x=S.sub;if(!cloudOn()||!x||!SUB_LIVE.includes(x.status))return "free";
+const tier=()=>{if(!CLOUD_ON)return "free";
+  const x=S.sub;if(!(cloudOn()||S.owner)||!x||!SUB_LIVE.includes(x.status))return "free";
   if(x.current_period_end&&Date.parse(x.current_period_end)<Date.now()-3*864e5)return "free";return x.tier||"free"};
 // abonnement lu sur le serveur (écrit par Stripe via la fonction stripe-webhook)
 let SUB_AT=0;
-async function subLoad(force){if(!PAY_ON||!cloudOn())return;if(!force&&Date.now()-SUB_AT<30e3)return;SUB_AT=Date.now();
+async function subLoad(force){if(!CLOUD_ON||!cloudOn())return;if(!force&&Date.now()-SUB_AT<30e3)return;SUB_AT=Date.now();
   try{const {data}=await SB.from("subscriptions").select("tier,period,status,current_period_end,cancel_at_period_end,trial_used").eq("user_id",USER.id).maybeSingle();
     const before=tier();S.sub=data||null;saveLocal();if(tier()!==before)renderAll()}catch(e){}}
 const can=f=>TIER_RANK[tier()]>=TIER_RANK[FEAT[f]||"free"];
 const tierOf=f=>TIERS.find(t=>t.k===(FEAT[f]||"free"));
-function gate(f){if(can(f))return true;openPlanDetail((FEAT[f]||"basic"),true,f);return false}
+function gate(f){if(can(f))return true;openPlanDetail((FEAT[f]||"basic"),false,f);return false}
 const lockTag=f=>can(f)?"":`<span class="lk">${icon("lock")}${tierOf(f).n}</span>`;
 const FREE_ACCOUNTS=2,FREE_IMPORTS=5;
 function importAllowed(){if(can("imports"))return true;const ym=todayISO().slice(0,7);const u=S.usage&&S.usage.ym===ym?S.usage:{ym,n:0};
@@ -4438,48 +4513,45 @@ const PLAN_ROWS=[
   ["Score, patrimoine, comparaison, impôts",0,0,1,1],["Assistant de questions",0,0,1,1],
   ["Bilans « Wrapped » du mois et de l'année",0,0,0,1],["Rapport PDF mensuel",0,0,0,1],["Dépenses partagées (couple, coloc)",0,0,0,1],["Synchronisation bancaire (bientôt)",0,0,0,1]];
 function openPlans(need){
-  let yearly=true;
+  let yearly=false;   // on montre d'abord le prix par mois
   const price=t=>t.m?`<b class="num">${(yearly?t.y:t.m).toFixed(2).replace(".",",")} €</b><small>/${yearly?"an":"mois"}</small>`:`<b class="num">0 €</b><small>pour toujours</small>`;
-  const draw=w=>{
-    w.querySelector("#plPer").querySelectorAll("button").forEach(b=>b.classList.toggle("on",(b.dataset.per==="y")===yearly));
-    w.querySelector("#plPer .pill").style.transform=`translateX(${yearly?"100%":"0"})`;
-    w.querySelector("#plCards").innerHTML=TIERS.map((t,i)=>`<div class="plan ${t.best?"best":""} ${tier()===t.k?"cur":""}">
+  const draw=el=>{
+    el.querySelector("#plPer").querySelectorAll("button").forEach(b=>b.classList.toggle("on",(b.dataset.per==="y")===yearly));
+    el.querySelector("#plPer .pill").style.transform=`translateX(${yearly?"100%":"0"})`;
+    el.querySelector("#plCards").innerHTML=TIERS.map((t,i)=>`<div class="plan ${t.best?"best":""} ${tier()===t.k?"cur":""}">
       ${t.best?`<span class="pl-badge">${icon("star")}Le plus choisi</span>`:""}
       <div class="pl-n">${t.n}</div><div class="pl-tag">${t.tag}</div>
       <div class="pl-p">${price(t)}</div>${yearly&&t.m?`<div class="pl-save">soit ${(t.y/12).toFixed(2).replace(".",",")} €/mois · 2 mois offerts</div>`:t.m?`<div class="pl-save">ou ${t.y.toFixed(2).replace(".",",")} €/an</div>`:`<div class="pl-save">&nbsp;</div>`}
       <ul>${i?`<li class="pl-all">${icon("check")}Tout ${TIERS[i-1].n}, plus :</li>`:""}${PLAN_ROWS.filter(r=>r[i+1]&&(i===0||r[i+1]!==r[i])).slice(0,8).map(r=>`<li>${icon("check")}${typeof r[i+1]==="string"?`${r[0]} : ${r[i+1]}`:r[0]}</li>`).join("")}</ul>
-      ${tier()===t.k?`<div class="pl-btn cur">Offre active</div>`:t.m?`<button class="pl-btn" data-buy="${t.k}">${t.best&&!(S.sub&&S.sub.trial_used)?"Essayer 7 jours gratuits":"Choisir "+t.n}</button>`:""}
+      ${tier()===t.k?`<div class="pl-btn cur">Offre active</div>`:t.m?`<button class="pl-btn" data-buy="${t.k}">${PAY_ON&&t.best&&!(S.sub&&S.sub.trial_used)?"Essayer 7 jours gratuits":"Choisir "+t.n}</button>`:""}
     </div>`).join("");
   };
-  sheet(`<div class="sh-title">Les offres Zerly<button class="xbtn" data-close aria-label="Fermer">${icon("x")}</button></div>
+  openPush("Offres",{id:"t:plans",render:(el,rr)=>{
+    el.innerHTML=`<div class="home-head"><h1 class="large">Les offres Zerly</h1></div>
     ${need&&FEAT[need]?`<div class="au-ok">${icon("lock")}<span><b>${esc(FEAT_NAME[need]||"Cette fonction")}</b> fait partie de l'offre ${tierOf(need).n}.</span></div>`:`<p class="expl">Sans engagement, résiliable à tout moment.</p>`}
     <div class="seg2" id="plPer"><span class="pill"></span><button data-per="m">Mensuel</button><button data-per="y">Annuel · −17 %</button></div>
     <div class="plans" id="plCards"></div>
     <div class="sec">Tout comparer</div>
-    <div class="card noswipe pl-tw"><table class="pl-t"><thead><tr><th></th>${TIERS.map(t=>`<th class="${t.best?"best":""}">${t.n}</th>`).join("")}</tr></thead><tbody>
+    <div class="card pl-tw"><table class="pl-t"><thead><tr><th></th>${TIERS.map(t=>`<th class="${t.best?"best":""}">${t.n}</th>`).join("")}</tr></thead><tbody>
       ${PLAN_ROWS.map(r=>`<tr><td>${r[0]}</td>${r.slice(1).map((v,i)=>`<td class="${TIERS[i].best?"best":""}">${v===1?icon("check"):v===0?"–":v}</td>`).join("")}</tr>`).join("")}</tbody></table></div>
-    ${PAY_ON?`<p class="hint" style="text-align:left;margin-top:8px">Prix TTC, TVA non applicable (art. 293 B du CGI). <a href="cgv.html" target="_blank" rel="noopener">Conditions générales de vente</a></p>`:`<div class="fl">Mode test (avant l'ouverture des paiements)</div>
-    <div class="hscroll" id="plTest">${TIERS.map(t=>`<button class="chip ${tier()===t.k?"on":""}" data-tt="${t.k}">${t.n}</button>`).join("")}</div>
-    <p class="hint" style="text-align:left;margin-top:8px">Les paiements ne sont pas encore ouverts : choisis une offre ici pour voir l'appli comme un abonné de cette offre. Prix TTC, TVA non applicable (art. 293 B du CGI).</p>`}`,
-  {mount:(w,close)=>{draw(w);
-    // on arrive sur l'offre mise en avant
-    {const c=w.querySelector("#plCards");if(c)c.scrollLeft=0}
-    w.querySelector("#plPer").onclick=e=>{const b=e.target.closest("[data-per]");if(!b)return;yearly=b.dataset.per==="y";draw(w)};
-    w.addEventListener("click",e=>{const b=e.target.closest("[data-buy]");if(b){close();setTimeout(()=>openPlanDetail(b.dataset.buy,yearly,need),320);return}
-      const t=e.target.closest("[data-tt]");if(t){S.settings.tier=t.dataset.tt;save();w.querySelectorAll("#plTest .chip").forEach(x=>x.classList.toggle("on",x===t));draw(w);renderAll();toast("Mode test : offre "+TIERS.find(x=>x.k===t.dataset.tt).n)}});
+    <p class="hint" style="text-align:left;margin-top:8px">Prix TTC, TVA non applicable (art. 293 B du CGI).${PAY_ON?` <a href="cgv.html" target="_blank" rel="noopener">Conditions générales de vente</a>`:" Les paiements ouvrent bientôt."}</p>`;
+    draw(el);
+    el.querySelector("#plPer").onclick=e=>{const b=e.target.closest("[data-per]");if(!b)return;yearly=b.dataset.per==="y";draw(el)};
+    el.querySelectorAll("[data-buy]").forEach(()=>{});
+    el.onclick=e=>{const b=e.target.closest("[data-buy]");if(b)openPlanDetail(b.dataset.buy,yearly,need,()=>draw(el))};
   }});
 }
 
-// tout ce qu'il faut savoir avant de payer, au même endroit
-function openPlanDetail(k,yearly,need){
-  const t=TIERS.find(x=>x.k===k),i=TIERS.indexOf(t);let y=yearly!==false;
-  const trial=t.best&&!(S.sub&&S.sub.trial_used);
-  openPush("Offre "+t.n,{id:"t:plan",render:(el,rr)=>{
+// tout ce qu'il faut savoir avant de payer, au même endroit (monte du bas, par-dessus la page des offres)
+function openPlanDetail(k,yearly,need,done){
+  const t=TIERS.find(x=>x.k===k),i=TIERS.indexOf(t);let y=yearly===true;
+  const trial=PAY_ON&&t.best&&!(S.sub&&S.sub.trial_used);
+  const draw=(w,close)=>{const el=w.querySelector(".pdx"),keepCgv=(el.querySelector("#pdCgv")||{}).checked,keepCode=(el.querySelector("#pdCode")||{}).value||"";
     const price=y?t.y:t.m,per=y?"an":"mois",start=new Date();if(trial)start.setDate(start.getDate()+7);
     const renew=new Date(start);if(y)renew.setFullYear(renew.getFullYear()+1);else renew.setMonth(renew.getMonth()+1);
     const fmtD=d=>d.getDate()+" "+MONTHS[d.getMonth()]+" "+d.getFullYear();
     const incl=PLAN_ROWS.filter(r=>r[i+1]).map(r=>typeof r[i+1]==="string"?`${r[0]} : ${r[i+1]}`:r[0]);
-    el.innerHTML=`${need&&FEAT_NAME[need]?`<div class="pd-need">${icon("lock")}<span><b>${esc(FEAT_NAME[need])}</b> fait partie de l'offre ${t.n}.</span><button class="chip" id="pdAll">Toutes les offres</button></div>`:""}<div class="tool-hero ${t.best?"gold":""}"><div class="th-k">${t.best?"⭐ Le plus choisi · ":""}${esc(t.tag)}</div><div class="th-v num">${price.toFixed(2).replace(".",",")} €<small> /${per}</small></div>
+    el.innerHTML=`${need&&FEAT_NAME[need]?`<div class="pd-need">${icon("lock")}<span><b>${esc(FEAT_NAME[need])}</b> fait partie de l'offre ${t.n}.</span></div>`:""}<div class="tool-hero ${t.best?"gold":""}"><div class="th-k">${t.best?"⭐ Le plus choisi · ":""}${esc(t.tag)}</div><div class="th-v num">${price.toFixed(2).replace(".",",")} €<small> /${per}</small></div>
         <div class="th-s">${y?`soit ${(t.y/12).toFixed(2).replace(".",",")} € par mois · 2 mois offerts`:`ou ${t.y.toFixed(2).replace(".",",")} € par an`}</div></div>
       <div class="seg2" id="pdPer" style="margin-top:14px"><span class="pill" style="transform:translateX(${y?"100%":"0"})"></span><button data-p="m" class="${y?"":"on"}">Mensuel</button><button data-p="y" class="${y?"on":""}">Annuel · −17 %</button></div>
       <div class="sec">Ce qui est inclus</div>
@@ -4491,23 +4563,35 @@ function openPlanDetail(k,yearly,need){
       </div>
       <div class="card tx-l pd-gap"><div class="tx">${icon("check")}<div class="tx-b"><b>Sans engagement</b><small>Résilie quand tu veux depuis Paramètres → Mon offre.</small></div></div></div>
       <div class="sec">Paiement sécurisé</div>
-      <div class="card tx-l"><div class="tx">${icon("lock")}<div class="tx-b"><b>Carte, Apple Pay, Google Pay, PayPal ou prélèvement</b><small>Sur la page sécurisée de Stripe : Zerly ne voit jamais ta carte. Ta banque peut te demander de confirmer dans son appli. Avec un prélèvement SEPA, l'offre s'active dès que le paiement est reçu (quelques jours). Reçu envoyé par mail.</small></div></div></div>
+      <div class="card tx-l"><div class="tx">${icon("lock")}<div class="tx-b"><b>Carte, Apple Pay, Google Pay, PayPal ou prélèvement</b><small>Sur la page sécurisée de Stripe : Zerly ne voit jamais ta carte. Ta banque peut te demander de confirmer dans son appli. Reçu envoyé par mail.</small></div></div></div>
       <div class="sec">Code promo</div>
       <div class="pd-promo"><input id="pdPromo" value="${esc(S.promo||"")}" placeholder="Ex : ZERLY10" autocapitalize="characters" autocomplete="off" spellcheck="false"><span class="pd-promo-t">${S.promo?icon("check")+"Sera appliqué au paiement":"Facultatif"}</span></div>
-      <label class="au-cgu" style="margin-top:16px"><input type="checkbox" id="pdCgv"><span>J'accepte les <a href="cgv.html" target="_blank" rel="noopener">conditions de vente</a> et je demande que l'offre démarre tout de suite.</span></label>
-      <p class="pd-legal">Rétractation possible sous 14 jours, au prorata de l'utilisation (art. 7 des conditions de vente).</p>
-      <button class="primary" id="pdPay" disabled>${icon("lock")}${trial?"Commencer l'essai gratuit":`Payer ${price.toFixed(2).replace(".",",")} €`}</button>
-      <p class="hint">${PAY_ON?(cloudOn()?"Paiement sécurisé par Stripe":"Connecte-toi à ton compte Zerly pour t'abonner"):"Les paiements ouvrent bientôt : tu ne peux pas encore t'abonner."}</p>`;
-    const pa=el.querySelector("#pdAll");if(pa)pa.onclick=()=>{curPush&&curPush.close();setTimeout(()=>openPlans(need),300)};
-    const chk=()=>{el.querySelector("#pdPay").disabled=!(el.querySelector("#pdCgv").checked&&PAY_ON&&cloudOn())};
-    el.querySelectorAll("input[type=checkbox]").forEach(c=>c.onchange=chk);
+      ${PAY_ON?"":`<div class="sec">Code test</div>
+      <div class="pd-promo"><input id="pdCode" value="${esc(keepCode)}" placeholder="8 caractères" maxlength="8" autocapitalize="characters" autocomplete="off" spellcheck="false"><span class="pd-promo-t" id="pdCodeT">Pour tester avant l'ouverture des paiements</span></div>`}
+      <label class="au-cgu" style="margin-top:16px"><input type="checkbox" id="pdCgv" ${keepCgv?"checked":""}><span>J'accepte les <a href="conditions.html" target="_blank" rel="noopener">conditions d'utilisation</a>${PAY_ON?` et les <a href="cgv.html" target="_blank" rel="noopener">conditions de vente</a>`:""} et je demande que l'offre démarre tout de suite.</span></label>
+      ${PAY_ON?`<p class="pd-legal">Rétractation possible sous 14 jours, au prorata de l'utilisation.</p>`:""}
+      <button class="primary" id="pdPay" disabled>${icon("lock")}${PAY_ON?(trial?"Commencer l'essai gratuit":`Payer ${price.toFixed(2).replace(".",",")} €`):"Activer avec mon code test"}</button>
+      <p class="hint">${PAY_ON?(cloudOn()?"Paiement sécurisé par Stripe":"Connecte-toi à ton compte Zerly pour t'abonner"):cloudOn()?"Les paiements ouvrent bientôt. En attendant, un code test débloque l'offre sur ton compte.":"Connecte-toi à ton compte Zerly pour utiliser un code test."}</p>`;
+    const code=el.querySelector("#pdCode");
+    const chk=()=>{el.querySelector("#pdPay").disabled=!(el.querySelector("#pdCgv").checked&&cloudOn()&&(PAY_ON||(code&&code.value.length===8)))};
+    el.querySelector("#pdCgv").onchange=chk;
+    if(code)code.oninput=()=>{code.value=code.value.toUpperCase().replace(/[^A-Z0-9]/g,"").slice(0,8);el.querySelector("#pdCodeT").textContent=code.value.length===8?"Prêt à être vérifié":"Pour tester avant l'ouverture des paiements";chk()};
+    chk();
     const pr=el.querySelector("#pdPromo");pr.oninput=()=>{pr.value=pr.value.toUpperCase().replace(/[^A-Z0-9_-]/g,"").slice(0,30);S.promo=pr.value;saveLocal();el.querySelector(".pd-promo-t").innerHTML=pr.value?"Sera vérifié au paiement":"Facultatif"};
-    el.querySelector("#pdPer").onclick=e=>{const b=e.target.closest("[data-p]");if(!b)return;y=b.dataset.p==="y";rr()};
-    el.querySelector("#pdPay").onclick=async()=>{const b=el.querySelector("#pdPay");b.disabled=true;b.innerHTML=`<span class="spin"></span>Ouverture du paiement…`;
+    el.querySelector("#pdPer").onclick=e=>{const b=e.target.closest("[data-p]");if(!b)return;y=b.dataset.p==="y";draw(w,close)};
+    el.querySelector("#pdPay").onclick=async()=>{const b=el.querySelector("#pdPay");b.disabled=true;
+      if(!PAY_ON){b.innerHTML=`<span class="spin"></span>Vérification…`;
+        const r=await SB.rpc("redeem_test_code",{p_code:code.value});
+        if(r.error||!r.data){b.innerHTML=`${icon("lock")}Activer avec mon code test`;chk();
+          toast(r.error?(/trop d/.test(r.error.message)?"Trop d'essais : réessaie dans une heure":"Vérification impossible pour le moment"):"Ce code n'existe pas");if(!r.error)shake(code);return}
+        await subLoad(true);close();renderAll();if(done)done();const nt=TIERS.find(x=>x.k===r.data)||t;
+        setTimeout(()=>sheet(`<div class="confirm"><div class="au-big" style="font-size:34px">🎉</div><h3>Offre ${nt.n} activée !</h3><p>Ton code test est valable sur ton compte, sur tous tes appareils. Profite de toutes les fonctions de l'offre ${nt.n}.</p><button class="primary" data-close>Super</button></div>`),340);return}
+      b.innerHTML=`<span class="spin"></span>Ouverture du paiement…`;
       const {data,error}=await SB.functions.invoke("checkout",{body:{plan:t.k,period:y?"y":"m",site:SITE,promo:(S.promo||"").trim()}});
-      if(error||!data||!data.url){let x={};try{x=await error.context.json()}catch(e){}toast(x.error==="already"?"Tu as déjà un abonnement : change d'offre dans Gérer mon abonnement":x.error==="bad_promo"?"Ce code promo n'existe pas ou n'est plus valable":"Paiement indisponible pour le moment");rr();return}
+      if(error||!data||!data.url){let x={};try{x=await error.context.json()}catch(e){}toast(x.error==="already"?"Tu as déjà un abonnement : change d'offre dans Gérer mon abonnement":x.error==="bad_promo"?"Ce code promo n'existe pas ou n'est plus valable":"Paiement indisponible pour le moment");draw(w,close);return}
       try{localStorage.setItem("zerly.paying",t.k)}catch(e){}location.href=data.url};
-  }});
+  };
+  sheet(`<div class="sh-title">Offre ${esc(t.n)}<button class="xbtn" data-close aria-label="Fermer">${icon("x")}</button></div><div class="pdx"></div>`,{mount:(w,close)=>draw(w,close)});
 }
 // retour de la page Stripe : on attend la confirmation du serveur, puis on active l'offre
 async function payReturn(){
@@ -4563,10 +4647,10 @@ function underlay(k,anim,dur){const a=$("app");if(!a)return;const e=dur?"cubic-b
   a.style.transform=k>0?`translate3d(${-28*k}%,0,0)`:"";a.style.filter=k>0?`brightness(${1-.15*k})`:""}
 // glisser sur un écran : quart gauche → menu ; ailleurs vers la droite → retour ; vers la gauche → écran suivant
 function bindPushSwipe(el,getMe){let g=null;
-  el.addEventListener("pointerdown",e=>{if(e.button>0||e.target.closest(NOSWIPE))return;g={x:e.clientX,y:e.clientY,id:e.pointerId,zone:e.clientX<=ZONE(),h:[[e.clientX,performance.now()]]}});
+  el.addEventListener("pointerdown",e=>{if(e.button>0||e.target.closest(NOSWIPE))return;g={x:e.clientX,y:e.clientY,id:e.pointerId,zone:e.clientX<=ZONE(),hs:hScroller(e.target),h:[[e.clientX,performance.now()]]}});
   el.addEventListener("pointermove",e=>{if(!g||e.pointerId!==g.id)return;const dx=e.clientX-g.x,dy=e.clientY-g.y,me=getMe();
     if(!g.on){if(Math.abs(dy)>10&&Math.abs(dy)>Math.abs(dx)){g=null;return}
-      if(Math.abs(dx)>12&&Math.abs(dx)>Math.abs(dy)*1.3){g.mode=dx>0?(g.zone?"menu":"back"):(fwdHas()?"fwd":null);if(!g.mode){g=null;return}
+      if(Math.abs(dx)>12&&Math.abs(dx)>Math.abs(dy)*1.3){if(hsBlocks(g.hs,dx)){g=null;return}g.mode=dx>0?(g.zone?"menu":"back"):(fwdHas()?"fwd":null);if(!g.mode){g=null;return}
         g.on=1;g.x=e.clientX-(dx>0?12:-12);try{el.setPointerCapture(e.pointerId)}catch(_){}if(g.mode==="menu"){drawerGrab();g.base=DRW.q}}else return}
     g.h.push([e.clientX,performance.now()]);if(g.h.length>10)g.h.shift();const d=e.clientX-g.x;
     if(g.mode==="menu"){drawerSet(g.base+Math.max(0,d)/($("menu").offsetWidth||320));return}
@@ -4843,7 +4927,7 @@ const TOOLS={
   tags:{n:"Étiquettes",ic:"tag",f:"tags"},
   shared:{n:"Dépenses partagées",ic:"users",f:"shared"},
   warranty:{n:"Garanties",ic:"shield",f:"warranty"},
-  taxes:{n:"Récap impôts",ic:"file",f:"taxes"},
+  taxes:{n:"Mes impôts",ic:"file",f:"taxes"},
   sim:{n:"Simulateurs",ic:"calc",f:"sim"},
   plans:{n:"Offres Zerly",ic:"crown",f:null},
   lock:{n:"Verrouillage",ic:"lock",f:null,d:"Face ID ou code"},
@@ -5660,7 +5744,7 @@ async function openReport(){
   const fit=()=>{const w=r.querySelector(".rp-wrap"),k=Math.min(1,(innerWidth-24)/794);w.style.transform=`scale(${k})`;w.style.height=(w.scrollHeight*k)+"px";w.style.marginLeft=Math.max(12,(innerWidth-794*k)/2)+"px"};
   fit();addEventListener("resize",fit);
   const close=()=>{removeEventListener("resize",fit);r.remove();document.documentElement.classList.remove("printing")};
-  r.querySelector(".rp-x").onclick=close;r.querySelector(".rp-go").onclick=()=>window.print();
+  r.querySelector(".rp-x").onclick=close;r.querySelector(".rp-go").onclick=()=>{document.documentElement.classList.add("printing");requestAnimationFrame(()=>setTimeout(()=>window.print(),60))};
 }
 
 /* ---------- Assistant (sans IA : tout est calculé sur le téléphone) ---------- */
@@ -6077,55 +6161,245 @@ TOOL_RENDER.warranty=(el,rr)=>{
 };
 
 /* ---------- Récap impôts ---------- */
+// ================= Mes impôts : Zerly accompagne toute la déclaration, étape par étape, du département à l'avis d'impôt =================
 // dates de la déclaration : officielles (lues chaque jour par le robot sur service-public.fr) ou, en attendant, les dates habituelles
 function taxDates(Y){const R=rates().impots;const cur=R&&+R.annee===Y+1?R:null,off=cur&&cur.z1?cur:null,yy=Y+1;
   const est={ouverture:yy+"-04-10",papier:yy+"-05-20",z1:yy+"-05-22",z2:yy+"-05-29",z3:yy+"-06-05"};
-  return Object.assign({},est,off||{},{off:!!off,etat:cur&&cur.etat||""})}
+  const D=Object.assign({},est,off||{},{off:!!off,etat:cur&&cur.etat||""});
+  return Object.assign(D,{avis:yy+"-07-24",remb:yy+"-07-24",correc:yy+"-08-01",taux:yy+"-09-01",solde:yy+"-09-25"})}
 const TAX_ZONE=d=>{const n=parseInt(d,10);return isNaN(n)?(String(d).toUpperCase().startsWith("2")?"z2":"z3"):n<=19?"z1":n<=54?"z2":"z3"};
-const TAX_STEPS=[["login","Connecte-toi sur impots.gouv.fr","Avec ton numéro fiscal (sur un ancien avis d'impôt) et ton mot de passe, ou avec FranceConnect."],
-  ["situation","Vérifie ta situation","Adresse, mariage ou PACS, enfants à charge : c'est en haut de la déclaration."],
-  ["salaires","Contrôle tes salaires","Ils sont déjà remplis (cases 1AJ, 1BJ). Compare avec le net imposable de ta fiche de paie de décembre."],
-  ["dons","Ajoute tes dons","Case 7UF (66 % de réduction), ou 7UD pour l'aide aux personnes en difficulté (75 %)."],
-  ["garde","Garde d'enfants de moins de 6 ans","Cases 7GA à 7GG : 50 % de crédit d'impôt (crèche, assistante maternelle…)."],
-  ["frais","Frais réels ou 10 % ?","Par défaut, 10 % de déduction automatique. Si tes trajets coûtent plus, déclare les frais réels en case 1AK."],
-  ["placements","Intérêts et loyers","Intérêts imposables (2TR…), loyers d'un logement vide (4BE). Les livrets A, LDDS et LEP ne se déclarent pas."],
-  ["signer","Signe et garde l'accusé de réception","Clique sur « Signer ma déclaration », puis télécharge l'accusé : c'est ta preuve."]];
-function taxGuideHTML(Y,vals){const D=taxDates(Y),dep=(S.profile||{}).dep||"",z=dep?TAX_ZONE(dep):null,t=todayISO(),chk=((S.taxCheck||{})[Y])||{};
-  const mine=z?D[z]:null,left=mine?daysBetween(t,mine):null,done=TAX_STEPS.filter(x=>chk[x[0]]).length;
-  const row=(k,lab,d)=>`<div class="cell ${z===k?"tx-me":""}">${icon("cal")}<span class="ck cm-n">${lab}</span><span class="cv">${capF(longDate(d).replace(/^\w+ /,""))}</span></div>`;
-  return `<div class="sec">Ta déclaration ${Y+1} <small>revenus ${Y}</small></div>
-    ${mine&&left!=null&&left>=0&&t>=D.ouverture?`<div class="tool-hero"><div class="th-k">Il te reste</div><div class="th-v num">${plural(left,"jour")}</div><div class="th-s">pour déclarer en ligne (jusqu'au ${longDate(mine)})</div></div>`:mine&&t<D.ouverture?`<div class="tool-hero"><div class="th-k">Ouverture de la déclaration</div><div class="th-v">${capF(longDate(D.ouverture).replace(/^\w+ /,""))}</div><div class="th-s">Ta date limite : ${longDate(mine)}</div></div>`:""}
-    <div class="group">${row("ouverture","Ouverture en ligne",D.ouverture)}${row("papier","Déclaration papier",D.papier)}${row("z1","Départements 01 à 19",D.z1)}${row("z2","Départements 20 à 54",D.z2)}${row("z3","Départements 55 à 976",D.z3)}
-      <button class="cell" id="txDep">${icon("home")}<span class="ck">Ton département</span><span class="cv">${dep?esc(dep):"Choisir"}${icon("chev")}</span></button></div>
-    <p class="hint" style="text-align:left;margin-top:8px">${D.off?"Dates officielles (service-public.fr), mises à jour automatiquement.":"Dates habituelles des années précédentes. Les dates officielles s'affichent ici automatiquement dès leur publication, en général en avril."}${D.etat?" "+esc(D.etat):""}</p>
-    <div class="sec">Remplir ta déclaration pas à pas <small>${done}/${TAX_STEPS.length}</small></div>
-    <div class="group tx-steps">${TAX_STEPS.map(([k,n,d],i)=>`<button class="cell" data-tk="${k}"><span class="tx-n ${chk[k]?"on":""}">${chk[k]?icon("check"):i+1}</span><span class="ck cm-n">${n}<small>${d}${vals[k]?` <b>Zerly : ${vals[k]}</b>`:""}</small></span></button>`).join("")}</div>
-    <a class="ghost tx-link" href="https://www.impots.gouv.fr/accueil" target="_blank" rel="noopener">${icon("link")}Aller sur impots.gouv.fr</a>`}
+const taxYear=()=>{const t=todayISO(),y=+t.slice(0,4);return +t.slice(5,7)>=9?y:y-1};
+const taxDeadline=Y=>{const D=taxDates(Y),dep=(S.profile||{}).dep;return dep?D[TAX_ZONE(dep)]:D.z1};
+const taxSt=Y=>{S.tax=S.tax||{};const x=S.tax[Y]=S.tax[Y]||{sit:{},docs:{},steps:{},checks:{},after:{}};
+  const old=(S.taxCheck||{})[Y];if(old&&!x.mig){const map={login:"login",situation:"famille",salaires:"prerempli",dons:"charges",garde:"charges",frais:"frais",placements:"ajout",signer:"signer"};for(const k in old)if(old[k]&&map[k])x.steps[map[k]]=true;x.mig=1}
+  for(const k of ["sit","docs","steps","checks","after"])x[k]=x[k]||{};
+  if(x.sit.fam&&!x.sit.fmar&&!x.sit.fdiv){x.sit.fmar=1;delete x.sit.fam}
+  return x};
+// ---------- toutes les situations possibles
+const TAX_FST=[["cel","Célibataire"],["mar","Marié(e)"],["pac","Pacsé(e)"],["div","Divorcé(e) ou séparé(e)"],["veu","Veuf ou veuve"]];
+const TAX_SIT=[["Ton foyer",[["enf","Enfants mineurs à charge"],["gal","Enfant en garde alternée"],["maj","Enfant majeur rattaché (étudiant…)"],["iso","Je vis seul(e) avec mes enfants"],["rat","Je suis rattaché(e) au foyer de mes parents"],["asc","J'aide un parent âgé (argent, hébergement)"],["inv","Invalidité ou carte mobilité inclusion"],["anc","Ancien combattant de plus de 74 ans"]]],
+  ["Tes revenus en {Y}",[["sal","Salarié(e)"],["alt","Apprenti(e) ou alternant(e)"],["etu","Job étudiant (moins de 26 ans)"],["sta","Stage gratifié"],["hsup","Heures supplémentaires"],["ij","Arrêt maladie ou congé maternité"],["cho","Allocations chômage"],["ret","Retraite ou pension"],["ind","Indépendant(e), micro-entreprise"],["crea","J'ai créé mon entreprise"],["penr","Pension alimentaire reçue"],["etr","Revenus de l'étranger"]]],
+  ["Ton épargne et tes biens",[["loy","Location vide (loyers)"],["meu","Location meublée ou Airbnb"],["fin","Actions, dividendes, intérêts imposables"],["av","Retrait d'assurance-vie"],["per","Versements sur un PER"],["cry","J'ai vendu des cryptos"],["cpt","Compte à l'étranger (Revolut, N26, PayPal…)"],["rs","Résidence secondaire"],["defi","Investissement immobilier défiscalisé (Pinel…)"]]],
+  ["Ce qui fait baisser ton impôt",[["don","Dons à des associations"],["gar","Enfant de moins de 6 ans gardé"],["dom","Emploi à domicile (ménage, cours…)"],["pen","Pension alimentaire versée"],["frr","Longs trajets pour aller travailler"],["scol","Enfants au collège, au lycée ou en études"],["synd","Cotisations syndicales"],["ehpad","Proche en maison de retraite"],["borne","Borne de recharge électrique installée"]]],
+  ["Ce qui a changé en {Y}",[["first","C'est ma première déclaration"],["dem","J'ai déménagé"],["fmar","Mariage ou PACS"],["fdiv","Divorce ou séparation"],["nais","Naissance ou adoption"],["dec","Décès du conjoint"],["depart","Départ ou retour de l'étranger"]]]];
+function taxGuess(Y){const ops=S.ops.filter(o=>inYear(o,Y)),has=f=>ops.some(f),g={};
+  if(has(o=>o.t==="rem"&&o.c==="Salaire"))g.sal=1;
+  if(has(o=>o.t==="rem"&&(o.c==="Allocations & chômage"||/chomage|france travail|pole emploi/.test(norm(o.l)))))g.cho=1;
+  if(has(o=>o.t==="rem"&&o.c==="Retraite & pension"))g.ret=1;
+  if(has(o=>o.t==="rem"&&o.c==="Loyers perçus"))g.loy=1;
+  if(has(o=>o.t==="rem"&&/airbnb|booking|abritel/.test(norm(o.l))))g.meu=1;
+  if(has(o=>o.t==="rem"&&/cpam|indemnites journalieres|ameli/.test(norm(o.l))))g.ij=1;
+  if(has(o=>o.t==="dep"&&o.c==="Dons aux associations"))g.don=1;
+  if(has(o=>o.t==="dep"&&o.c==="Enfants & garde"))g.gar=1;
+  if(has(o=>o.t==="dep"&&/urssaf/.test(norm(o.l))))g.ind=1;
+  if(has(o=>o.t==="dep"&&/cesu|pajemploi/.test(norm(o.l))))g.dom=1;
+  if(has(o=>o.t==="dep"&&/syndicat|cfdt|cgt|unsa|force ouvriere|cfe-?cgc/.test(norm(o.l))))g.synd=1;
+  if(has(o=>o.t==="rem"&&o.c==="Intérêts")||S.accounts.some(a=>a.invest))g.fin=1;
+  if(S.accounts.some(a=>/revolut|n26|paypal|wise|bunq|trade ?republic|lydia|sumeria|vivid|nickel/.test(norm(a.name))))g.cpt=1;
+  return g}
+// ---------- documents (type de fichier rangé dans Zerly)
+const TAX_DOCS=[["Identité et compte",[["id","Pièce d'identité","Carte d'identité ou passeport."],
+    ["nf","Numéro fiscal et mot de passe impots.gouv.fr","Sur ton dernier avis d'impôt, en haut."],
+    ["avis","Ton dernier avis d'impôt","Dans ton espace impots.gouv.fr.",s=>!s.first,"impot"],
+    ["rib","RIB du compte pour les remboursements","Dans l'appli de ta banque."],
+    ["adr","Ancienne et nouvelle adresse, date du déménagement","Avec la date du déménagement.",s=>s.dem||s.depart],
+    ["famd","Acte de mariage, de PACS, jugement, acte de naissance ou de décès","Avec la date exacte.",s=>s.fmar||s.fdiv||s.nais||s.dec,"attest"],
+    ["ratt","Demande de rattachement signée par ton enfant majeur","Signée par ton enfant.",s=>s.maj,"attest"],
+    ["galt","Jugement ou accord de garde alternée","Pour partager la part de l'enfant.",s=>s.gal,"attest"],
+    ["invd","Carte mobilité inclusion (mention invalidité)","Peut te donner une demi-part en plus.",s=>s.inv,"attest"],
+    ["ancd","Carte du combattant","Demi-part en plus après 74 ans.",s=>s.anc,"attest"]]],
+  ["Tes revenus",[["bul","Fiche de paie de décembre","Le « net imposable » y est écrit.",s=>s.sal||s.alt||s.hsup,"paie"],
+    ["att","Attestation fiscale de l'employeur","Si ton employeur t'en envoie une.",s=>s.sal,"attest"],
+    ["altd","Contrat d'apprentissage et total de tes salaires","Non imposé jusqu'au SMIC annuel.",s=>s.alt,"attest"],
+    ["etud","Fiches de paie de ton job étudiant","Non imposé jusqu'à 3 SMIC mensuels.",s=>s.etu,"paie"],
+    ["stad","Attestation de gratification de stage","Non imposé jusqu'au SMIC annuel.",s=>s.sta,"attest"],
+    ["ijd","Attestation de la CPAM (indemnités journalières)","Sur ton compte ameli.",s=>s.ij,"attest"],
+    ["ft","Attestation fiscale France Travail","Sur francetravail.fr, « Mes paiements ».",s=>s.cho,"attest"],
+    ["retd","Attestation fiscale de ta caisse de retraite","Sur ton espace retraite.",s=>s.ret,"attest"],
+    ["ca","Chiffre d'affaires de l'année","Le total de tes déclarations Urssaf.",s=>s.ind||s.crea||s.meu,"urssaf"],
+    ["cread","Date de début d'activité","Sur ton avis de situation INSEE.",s=>s.crea,"urssaf"],
+    ["penrd","Montant des pensions alimentaires reçues","Elles sont imposables.",s=>s.penr],
+    ["etrd","Montants de tes revenus étrangers","Et l'impôt déjà payé là-bas.",s=>s.etr||s.depart,"attest"]]],
+  ["Ton épargne et tes biens",[["loyd","Loyers encaissés et charges de l'année","Le total de l'année.",s=>s.loy],
+    ["meud","Relevés Airbnb, Booking ou de tes recettes de location meublée","Le total de tes recettes.",s=>s.meu,"attest"],
+    ["ifu","IFU de ta banque ou de ton courtier","Envoyé par ta banque en mars ou avril.",s=>s.fin,"impot"],
+    ["avd","Attestation de rachat de ton assureur","Envoyée par ton assureur.",s=>s.av,"attest"],
+    ["perd","Attestation de versements sur ton PER","Déductible de tes revenus.",s=>s.per,"attest"],
+    ["cryd","Historique de tes ventes de cryptos","Prix d'achat et de vente.",s=>s.cry],
+    ["cptd","Références de ton compte à l'étranger","Banque, pays, numéro, date d'ouverture.",s=>s.cpt],
+    ["rsd","Infos sur ta résidence secondaire","Adresse, louée ou non.",s=>s.rs],
+    ["defid","Attestation de ton investissement (Pinel, Denormandie…)","Fournie par le promoteur ou le notaire.",s=>s.defi,"attest"],
+    ["bien","Tes logements à jour sur impots.gouv.fr","Rubrique « Biens immobiliers ».",s=>s.loy||s.meu||s.rs||s.dem]]],
+  ["Ce qui fait baisser ton impôt",[["donsd","Reçus fiscaux des associations","Reçus en début d'année.",s=>s.don,"attest"],
+    ["garded","Attestation de la crèche ou de la nounou","Montant payé, sans les aides CAF.",s=>s.gar,"attest"],
+    ["domd","Attestation fiscale Urssaf, CESU ou de l'organisme","Reçue en début d'année.",s=>s.dom,"urssaf"],
+    ["pend","Preuves de versement de la pension","Virements et jugement.",s=>s.pen||s.asc],
+    ["frrd","Tes frais réels","Kilomètres, repas, justificatifs.",s=>s.frr],
+    ["scold","Certificat de scolarité de chaque enfant","Un par enfant.",s=>s.scol,"attest"],
+    ["syndd","Attestation de cotisation syndicale","Envoyée par ton syndicat.",s=>s.synd,"attest"],
+    ["ehpadd","Facture annuelle de la maison de retraite","Pour une réduction d'impôt.",s=>s.ehpad,"attest"],
+    ["borned","Facture de la borne de recharge","Peut donner un crédit d'impôt.",s=>s.borne,"facture"]]]];
+const TAX_FORMS=[["2042","Déclaration des revenus",()=>1,"La déclaration principale : tout le monde la remplit."],
+  ["2042-RICI","Réductions et crédits d'impôt",s=>s.don||s.gar||s.dom||s.scol||s.synd||s.ehpad||s.borne||s.defi,"Dons, garde d'enfants, emploi à domicile, scolarité, syndicat, maison de retraite, borne de recharge, investissement locatif."],
+  ["2042-C","Revenus complémentaires",s=>s.fin||s.etr||s.cry||s.av||s.per,"Certains revenus de placements, de l'étranger, et les versements sur un PER."],
+  ["2042-C-PRO","Revenus des indépendants et location meublée",s=>s.ind||s.crea||s.meu,"Chiffre d'affaires d'une micro-entreprise ou recettes d'une location meublée (Airbnb…)."],
+  ["2044","Revenus fonciers au réel",s=>s.loy,"Seulement si tes loyers dépassent 15 000 € par an ou si tu choisis le réel ; sinon, une seule case suffit (micro-foncier)."],
+  ["2047","Revenus de l'étranger",s=>s.etr||s.depart,"Pour les revenus perçus hors de France."],
+  ["2074","Plus-values de titres",s=>s.fin,"Seulement dans certains cas de vente d'actions (souvent déjà prérempli par ta banque)."],
+  ["2086","Cessions de cryptos",s=>s.cry,"Si tu as vendu des cryptos contre des euros."],
+  ["3916","Comptes à l'étranger",s=>s.cpt,"Obligatoire pour chaque compte ouvert hors de France (Revolut, N26, PayPal…), même vide : l'oubli coûte une amende."]];
+// conseils selon la situation : ce qu'on oublie souvent
+const TAX_TIPS=[[s=>s.iso,"Parent seul : coche la case T. Elle te donne une demi-part en plus."],[s=>s.gal,"Garde alternée : chaque parent compte l'enfant pour moitié (un quart de part chacun)."],
+  [s=>s.maj,"Enfant majeur : soit tu le rattaches (une demi-part), soit tu lui verses une pension que tu déduis. Choisis ce qui te fait payer le moins."],
+  [s=>s.rat,"Rattaché(e) à tes parents : tu ne fais pas ta propre déclaration, tes revenus vont sur la leur."],
+  [s=>s.etu,"Job étudiant (moins de 26 ans) : tes salaires ne sont pas imposés jusqu'à 3 SMIC mensuels."],[s=>s.alt,"Apprenti(e) : tes salaires ne sont pas imposés jusqu'au montant du SMIC annuel."],
+  [s=>s.sta,"Stage : la gratification n'est pas imposée jusqu'au montant du SMIC annuel."],[s=>s.hsup,"Heures supplémentaires : elles ne sont pas imposées jusqu'à 7 500 € par an (souvent déjà remplies)."],
+  [s=>s.per,"PER : ce que tu as versé se déduit de tes revenus (dans la limite d'un plafond indiqué sur ton avis d'impôt)."],[s=>s.asc,"Parent âgé : l'argent que tu lui verses pour vivre peut se déduire comme une pension alimentaire."],
+  [s=>s.dec,"Décès du conjoint : tu fais deux déclarations pour l'année, une jusqu'au décès et une après."],[s=>s.fmar||s.fdiv,"Mariage, PACS ou séparation : une seule déclaration commune pour l'année, ou deux séparées, au choix."],
+  [s=>s.first,"Première déclaration : tu n'as pas encore de numéro fiscal ? Ton service des impôts te le donne, ou utilise FranceConnect."],
+  [s=>s.meu,"Location meublée ou Airbnb : jusqu'à un certain montant, l'abattement automatique (micro-BIC) suffit."],
+  [()=>1,"Vendre tes propres affaires (Vinted, Leboncoin) n'est pas imposable, sauf si c'est une vraie activité de revente."]];
+const TAX_STEPS=[["login","Connecte-toi sur impots.gouv.fr","Avec ton numéro fiscal ou FranceConnect."],
+  ["identite","Vérifie ton identité et ton adresse","Change l'adresse si tu as déménagé.",s=>s.dem?"Tu as déménagé : indique ta nouvelle adresse et la date.":""],
+  ["famille","Vérifie ta situation de famille","Mariage, PACS, enfants…",s=>s.fmar||s.fdiv||s.nais||s.dec?"Un changement cette année : indique-le avec sa date.":s.iso?"Parent seul : coche la case T.":s.enf||s.maj?"Vérifie le nombre d'enfants à charge.":""],
+  ["prerempli","Contrôle les revenus déjà remplis","Compare avec tes documents."],
+  ["ajout","Ajoute ce qui manque","Loyers, intérêts, revenus d'indépendant…"],
+  ["annexes","Coche les annexes dont tu as besoin","Coche les rubriques, les formulaires s'ajoutent."],
+  ["charges","Ajoute tes réductions et crédits d'impôt","Dons, garde d'enfants, emploi à domicile…"],
+  ["frais","Choisis : 10 % automatiques ou frais réels","Les 10 % suffisent dans la plupart des cas."],
+  ["recap","Lis le récapitulatif","Ton impôt estimé doit te paraître logique."],
+  ["banque","Vérifie tes coordonnées bancaires","Pour les remboursements et prélèvements."]];
+const TAX_CHECKS=[["Identité et adresse correctes"],["Situation de famille et enfants à charge correctes"],["Salaires préremplis vérifiés"],["Revenus complémentaires déclarés"],["Comptes à l'étranger déclarés (3916)",s=>s.cpt],["Frais et déductions vérifiés"],["Réductions et crédits d'impôt vérifiés"],["Coordonnées bancaires correctes"],["Déclaration relue en entier"]];
+const TAX_SIGN=[["signer","Signe ta déclaration","Bouton « Signer ma déclaration »."],["accuse","Garde l'accusé de réception","C'est ta preuve. Garde-le ici.","impot"]];
+const TAX_AFTER=[["avis","Récupère ton avis d'impôt","Dans ton espace impots.gouv.fr.","avis","impot"],
+  ["remb","Remboursement ou reste à payer","Remboursement fin juillet, sinon prélèvement en septembre.","remb"],
+  ["correc","Une erreur ? Corrige en ligne","Possible jusqu'à début décembre.",""],
+  ["taux","Ton nouveau taux de prélèvement","Il change en septembre, sur ta fiche de paie.","taux"],
+  ["garder","Garde tes justificatifs 3 ans","Ils sont rangés dans Zerly.",""]];
+const TXO={};
+// les étapes, dans l'ordre : chacune s'ouvre quand la précédente est terminée
+function taxStages(Y){const st=taxSt(Y),sit=st.sit,dep=(S.profile||{}).dep;
+  const docs=TAX_DOCS.flatMap(g=>g[1]).filter(d=>!d[3]||d[3](sit)),checks=TAX_CHECKS.filter(c=>!c[1]||c[1](sit));
+  const L=[["dep","Ton département",!!(dep&&st.depOk),1,dep&&st.depOk?1:0],["sit","Ta situation",!!st.sitDone,1,st.sitDone?1:0],
+    ["docs","Tes documents à rassembler",docs.every(d=>st.docs[d[0]])||!!st.docsSkip,docs.length,docs.filter(d=>st.docs[d[0]]).length],
+    ["forms","Tes formulaires",!!st.formsOk,1,st.formsOk?1:0],
+    ["steps","Déclarer sur impots.gouv.fr",TAX_STEPS.every(x=>st.steps[x[0]]),TAX_STEPS.length,TAX_STEPS.filter(x=>st.steps[x[0]]).length],
+    ["checks","Les vérifs avant de signer",checks.every(c=>st.checks[c[0]]),checks.length,checks.filter(c=>st.checks[c[0]]).length],
+    ["sign","Signer et garder la preuve",TAX_SIGN.every(x=>st.steps[x[0]]),TAX_SIGN.length,TAX_SIGN.filter(x=>st.steps[x[0]]).length],
+    ["after","Après la déclaration",TAX_AFTER.every(x=>st.after[x[0]]),TAX_AFTER.length,TAX_AFTER.filter(x=>st.after[x[0]]).length]];
+  let open=true;return L.map(([k,n,done,max,cnt])=>{const r={k,n,done,max,cnt,unlocked:open};if(!done)open=false;return r})}
+function taxNext(Y){const st=taxSt(Y),D=taxDates(Y),t=todayISO(),dl=taxDeadline(Y),cur=taxStages(Y).find(x=>!x.done);
+  if(!cur)return {k:"done",t:"Tout est fait pour cette année 🎉",s:"Zerly te prévient quand la prochaine déclaration approche."};
+  const left=daysBetween(t,dl);
+  const M={dep:["Commence par ton département","Il donne ta date limite pour déclarer en ligne."],sit:["Dis à Zerly ta situation","1 minute : Zerly te prépare la liste exacte de ce qu'il te faut."],
+    docs:[`Rassemble tes documents : encore ${cur.max-cur.cnt}`,t<D.ouverture?`Pas de stress : la déclaration ouvre le ${longDate(D.ouverture)}.`:`Avant le ${longDate(dl)}.`],
+    forms:["Regarde tes formulaires","Et ce qu'il faut savoir pour ta situation."],
+    steps:[t<D.ouverture?"Tout est prêt 👌":cur.cnt?"Continue ta déclaration":"Tu peux déclarer maintenant",t<D.ouverture?`Rendez-vous le ${longDate(D.ouverture)} pour déclarer. Zerly te préviendra.`:left<0?"La date limite est passée : déclare au plus vite, la majoration augmente avec le temps.":`Plus que ${plural(left,"jour")} (jusqu'au ${longDate(dl)}).`],
+    checks:["Les dernières vérifs","Avant de signer, relis ces points."],sign:["Signe ta déclaration","Puis garde l'accusé de réception."],
+    after:[(TAX_AFTER.find(x=>!st.after[x[0]])||[])[1]||"Après la déclaration",(TAX_AFTER.find(x=>!st.after[x[0]])||[])[2]||""]};
+  return {k:cur.k,t:M[cur.k][0],s:M[cur.k][1]}}
+const taxFiles=(Y,key)=>(S.docs||[]).filter(d=>d.taxY===Y&&(!key||d.taxKey===key));
+async function taxAttach(Y,key,kind,label){const files=await chooseFiles();if(!files.length)return false;
+  await addDocs(files,null,kind||"attest",{taxY:Y,taxKey:key,title:label+" · "+Y});return true}
 TOOL_RENDER.taxes=el=>{
-  const Y=S.year,ops=(t,f)=>S.ops.filter(o=>o.t===t&&inYear(o,Y)&&f(o)),sum=L=>L.reduce((s,o)=>s+o.m,0);
+  const Y=+(el.dataset.ty||taxYear()),st=taxSt(Y),sit=st.sit,D=taxDates(Y),t=todayISO(),dep=(S.profile||{}).dep||"",dl=taxDeadline(Y);
+  if(!st.sitDone&&!st.guessed){Object.assign(sit,taxGuess(Y));st.guessed=1}
+  const guess=taxGuess(Y),stages=taxStages(Y),nx=taxNext(Y),cur=stages.find(x=>!x.done);
+  const ops=(tt,f)=>S.ops.filter(o=>o.t===tt&&inYear(o,Y)&&f(o)),sum=L=>L.reduce((s,o)=>s+o.m,0);
   const donL=ops("dep",o=>o.c==="Dons aux associations"),help=donL.filter(o=>/restos?|secours|croix|emmaus|abbe pierre|banque alimentaire|fondation de france|samu social/.test(norm(o.l))),gen=donL.filter(o=>!help.includes(o));
   const garde=sum(ops("dep",o=>o.c==="Enfants & garde")),trans=sum(ops("dep",o=>o.c==="Carburant"||o.c==="Transport"));
-  const sal=sum(ops("rem",o=>o.c==="Salaire")),int=sum(ops("rem",o=>o.c==="Intérêts")),loy=sum(ops("rem",o=>o.c==="Loyers perçus"));
-  const red=sum(gen)*.66+sum(help)*.75;
-  const box=(ic,n,v,eff,cs,why)=>`<div class="tx">${icon(ic)}<div class="tx-b"><div class="tx-h"><b>${n}</b><span class="num">${eurTile(v)}</span></div>${eff?`<div class="tx-e">${eff}</div>`:""}<small>${cs?`<span class="tx-c">${cs}</span>`:""}${why}</small></div></div>`;
-  el.innerHTML=`<div class="home-head"><h1 class="large">Impôts ${Y}</h1>${yearPill()}</div>
-    <p class="expl">Les dates à retenir, et les montants de l'année à reporter dans ta déclaration de revenus.</p>
-    ${taxGuideHTML(Y,{salaires:sal?eurTile(sal)+" reçus":"",dons:sum(gen)+sum(help)?eurTile(sum(gen)+sum(help))+" de dons":"",garde:garde?eurTile(garde):"",frais:trans?eurTile(trans)+" de transport":"",placements:int+loy?eurTile(int+loy):""})}
-    ${red?`<div class="tool-hero"><div class="th-k">Réduction d'impôt estimée</div><div class="th-v num">${eurTile(red)}</div><div class="th-s">grâce à tes dons de ${Y}</div></div>`:""}
-    <div class="sec">Ce qui fait baisser ton impôt</div>
-    <div class="card tx-l">${box("heart","Dons aux associations",sum(gen),sum(gen)?`≈ ${eurTile(sum(gen)*.66)} de réduction (66 %)`:"","Case 7UF","Catégorie « Dons aux associations ».")}
-      ${help.length?box("heart","Dons d'aide aux personnes",sum(help),`≈ ${eurTile(sum(help)*.75)} de réduction (75 %)`,"Case 7UD","Restos du cœur, Secours populaire, Croix-Rouge…"):""}
-      ${box("baby","Garde d'enfants de moins de 6 ans",garde,garde?`≈ ${eurTile(garde*.5)} de crédit d'impôt (50 %), selon le plafond`:"","Cases 7GA à 7GG","Catégorie « Enfants & garde ».")}</div>
-    <div class="sec">À vérifier</div>
-    <div class="card tx-l">${box("brief","Salaires reçus",sal,"","Cases 1AJ / 1BJ","Montant net reçu. Déclare le net imposable de ta fiche de paie de décembre (souvent déjà prérempli).")}
-      ${box("car","Transport et carburant",trans,"","Case 1AK","Seulement si tu choisis les frais réels au lieu des 10 % automatiques.")}
-      ${int?box("coins","Intérêts perçus",int,"","Cases 2TR et suivantes","Les intérêts des livrets A, LDDS et LEP ne sont pas imposables."):""}
-      ${loy?box("key","Loyers perçus",loy,"","Case 4BE (micro-foncier)","Si tu loues un logement vide."):""}</div>
-    <p class="hint">Estimations d'après tes catégories. Les cases et plafonds peuvent changer : vérifie sur impots.gouv.fr. Ce n'est pas un conseil fiscal.</p>`;
-  el.querySelectorAll("[data-tk]").forEach(b=>b.onclick=()=>{S.taxCheck=S.taxCheck||{};const c=S.taxCheck[Y]=S.taxCheck[Y]||{};c[b.dataset.tk]=!c[b.dataset.tk];saveLocal();TOOL_RENDER.taxes(el)});
-  el.querySelector("#txDep").onclick=async()=>{const r=await formSheet("Ton département",[{k:"d",label:"Numéro du département",v:(S.profile||{}).dep||"",ph:"Ex : 69, 2A, 974",icon:"home",req:true,hint:"Il sert à trouver ta date limite de déclaration en ligne."}],"Enregistrer");if(!r)return;S.profile.dep=String(r.d).trim().toUpperCase();save();TOOL_RENDER.taxes(el)};
-  if(!el.dataset.rl){el.dataset.rl=1;ratesLoad().then(()=>TOOL_RENDER.taxes(el))}
+  const sal=sum(ops("rem",o=>o.c==="Salaire")),cho=sum(ops("rem",o=>o.c==="Allocations & chômage")),retr=sum(ops("rem",o=>o.c==="Retraite & pension")),int=sum(ops("rem",o=>o.c==="Intérêts")),loy=sum(ops("rem",o=>o.c==="Loyers perçus"));
+  const docs=TAX_DOCS.map(([g,L])=>[g,L.filter(d=>!d[3]||d[3](sit))]).filter(g=>g[1].length);
+  const forms=TAX_FORMS.filter(f=>f[2](sit)),checks=TAX_CHECKS.filter(c=>!c[1]||c[1](sit)),tips=TAX_TIPS.filter(x=>x[0](sit)).map(x=>x[1]);
+  const pct=stages.reduce((a,s)=>a+(s.done?1:s.cnt/Math.max(1,s.max)),0)/stages.length;
+  const hints={prerempli:[sal&&`Salaires reçus d'après Zerly : ${eurTile(sal)} (le montant net ; la déclaration utilise le « net imposable »).`,cho&&`Chômage reçu : ${eurTile(cho)}.`,retr&&`Retraite reçue : ${eurTile(retr)}.`].filter(Boolean).join(" "),
+    ajout:[loy&&`Loyers perçus : ${eurTile(loy)} (case 4BE en micro-foncier).`,int&&`Intérêts : ${eurTile(int)} (les livrets A, LDDS et LEP ne se déclarent pas).`].filter(Boolean).join(" "),
+    annexes:forms.length>1?`Pour toi : ${forms.slice(1).map(f=>f[0]).join(", ")}.`:"",
+    charges:[sum(gen)&&`Dons : ${eurTile(sum(gen))} (case 7UF, 66 % de réduction).`,sum(help)&&`Dons d'aide aux personnes : ${eurTile(sum(help))} (case 7UD, 75 %).`,garde&&`Garde d'enfants : ${eurTile(garde)} (cases 7GA à 7GG, 50 %).`].filter(Boolean).join(" "),
+    frais:trans?`Zerly a vu ${eurTile(trans)} de transport et carburant : compare avec 10 % de tes salaires${sal?` (≈ ${eurTile(sal*.1)})`:""}.`:""};
+  const fileChips=key=>{const F=taxFiles(Y,key);return F.length?`<div class="tx-files">${F.map(d=>`<span class="tx-file" data-doc="${d.id}">${icon(isPdf(d)?"file":"photo")}${esc(docTitle(d).replace(/ · \d{4}$/,""))}</span>`).join("")}</div>`:""};
+  const tick=(attr,key,on,title,sub,o={})=>`<div class="cell tx-row ${o.lock?"locked":""}"><button class="tx-hit" data-${attr}="${esc(key)}" ${o.lock?"disabled":""}><span class="tx-n ${on?"on":""}">${on?icon("check"):o.num||""}</span><span class="ck cm-n">${title}${sub?`<small>${sub}</small>`:""}${o.extra?`<em class="tx-z">${esc(o.extra)}</em>`:""}</span></button>${o.kind?`<button class="tx-clip" data-txf="${esc(key)}" data-kind="${o.kind}" data-label="${esc(title)}" aria-label="Garder le fichier dans Zerly">${icon("clip")}</button>`:""}${o.kind?fileChips(key):""}</div>`;
+  const dRow=(lab,d,me)=>`<div class="cell ${me?"tx-me":""}">${icon("cal")}<span class="ck cm-n">${lab}</span><span class="cv">${capF(longDate(d).replace(/^\w+ /,""))}</span></div>`;
+  const body={
+    dep:`<p class="expl" style="margin-top:0">Il donne ta date limite pour déclarer en ligne.</p>
+      <div class="group"><button class="cell" id="txDep">${icon("home")}<span class="ck">Ton département</span><span class="cv">${dep?esc(dep):"Choisir"}${icon("chev")}</span></button></div>
+      ${dep?`<div class="group" style="margin-top:12px">${dRow("Ouverture de la déclaration en ligne",D.ouverture)}${dRow("Ta date limite en ligne",dl,1)}${dRow("Déclaration papier",D.papier)}${dRow("Avis d'impôt disponible (environ)",D.avis)}${dRow("Nouveau taux de prélèvement",D.taux)}</div>
+      <p class="hint" style="text-align:left;margin-top:8px">${D.off?"Dates officielles.":"Dates habituelles, mises à jour dès que l'État publie les officielles."} Zerly te prévient avant chaque date.</p>`:""}
+      ${st.depOk?"":`<button class="primary" id="txDepOk" style="margin-top:14px" ${dep?"":"disabled"}>${icon("check")}Valider et continuer</button>`}`,
+    sit:`<p class="expl" style="margin-top:0">Touche ce qui te concerne en ${Y}.${Object.keys(guess).length?" ✦ = deviné d'après tes opérations.":""}</p>
+      <div class="fl">Ta situation de famille</div><div class="tx-chips">${TAX_FST.map(([k,l])=>`<button class="chip ${sit.fst===k?"on":""}" data-fst="${k}">${l}</button>`).join("")}</div>
+      ${TAX_SIT.map(([g,L])=>`<div class="fl">${g.replace("{Y}",Y)}</div><div class="tx-chips">${L.map(([k,l])=>`<button class="chip ${sit[k]?"on":""}" data-sit="${k}">${guess[k]?"✦ ":""}${l}</button>`).join("")}</div>`).join("")}
+      <button class="primary" id="txSitOk" style="margin-top:16px" ${sit.fst?"":"disabled"}>${icon("check")}${st.sitDone?"C'est à jour":"Valider"}</button>
+      ${sit.fst?"":`<p class="hint">Choisis d'abord ta situation de famille.</p>`}`,
+    docs:docs.map(([g,L])=>`<div class="fl">${g}</div><div class="group tx-steps">${L.map(d=>tick("txd",d[0],st.docs[d[0]],d[1],d[2],{kind:d[4]})).join("")}</div>`).join("")
+      +`<p class="hint" style="text-align:left;margin-top:8px">Coche quand tu l'as. Le trombone 📎 garde le fichier dans Zerly (facultatif).</p>
+      ${!st.docsSkip&&!stages[2].done?`<button class="tx-skip" id="txDocSkip">Je n'ai pas tout : continuer quand même</button>`:""}`,
+    forms:`<p class="expl" style="margin-top:0">En ligne, rien à télécharger : coche simplement ces rubriques dans ta déclaration.</p>
+      <div class="group">${forms.map(f=>`<a class="cell" href="${f[0]==="2042"?"https://www.impots.gouv.fr/formulaire/2042/declaration-des-revenus":"https://www.impots.gouv.fr/recherche?keys="+encodeURIComponent(f[0])}" target="_blank" rel="noopener"><span class="tx-f">${f[0]}</span><span class="ck cm-n tx-wrap">${f[1]}<small>${f[3]}</small></span>${icon("chev","chev")}</a>`).join("")}</div>
+      ${tips.length?`<div class="fl">Bon à savoir</div><div class="tx-tips">${tips.slice(0,4).map(x=>`<p>${icon("spark")}<span>${esc(x)}</span></p>`).join("")}</div>`:""}
+      ${st.formsOk?"":`<button class="primary" id="txFormsOk" style="margin-top:14px">${icon("check")}C'est noté</button>`}`,
+    steps:`${t<D.ouverture?`<p class="expl" style="margin-top:0">Ouverture le ${longDate(D.ouverture)}. Le jour J, coche chaque étape au fur et à mesure.</p>`:""}
+      <div class="group tx-steps">${TAX_STEPS.map(([k,n,d,f],i)=>{const on=st.steps[k],prevOk=i===0||st.steps[TAX_STEPS[i-1][0]],nextOn=i<TAX_STEPS.length-1&&st.steps[TAX_STEPS[i+1][0]];
+        return tick("txs2",k,on,n,d,{num:i+1,lock:(!on&&!prevOk)||(on&&nextOn),extra:[f&&f(sit),hints[k]].filter(Boolean).join(" ")})}).join("")}</div>
+      <a class="ghost tx-link" href="https://www.impots.gouv.fr/accueil" target="_blank" rel="noopener">${icon("link")}Ouvrir impots.gouv.fr</a>`,
+    checks:`<div class="group tx-steps">${checks.map(c=>tick("txc",c[0],st.checks[c[0]],c[0])).join("")}</div>`,
+    sign:`<div class="group tx-steps">${TAX_SIGN.map(([k,n,d,kind],i)=>tick("txs2",k,st.steps[k],n,d,{num:i+1,lock:i===1&&!st.steps.signer&&!st.steps.accuse,kind})).join("")}</div>`,
+    after:`<div class="group tx-steps">${TAX_AFTER.map(a=>tick("txa",a[0],st.after[a[0]],a[1],a[2],{kind:a[4],extra:a[3]&&D[a[3]]?`Vers le ${dayMonth(D[a[3]])}`:""})).join("")}</div>`};
+  const ic={dep:"pin",sit:"user",docs:"file",forms:"list",steps:"link",checks:"shield",sign:"pen",after:"check"};
+  const SUM={dep:()=>dep?`Département ${esc(dep)} · avant le ${dayMonth(dl)}`:"",sit:()=>{const n=Object.keys(sit).filter(k=>sit[k]&&k!=="fst").length;return (TAX_FST.find(x=>x[0]===sit.fst)||["",""])[1]+(n?` · ${n} choix`:"")},
+    docs:()=>`${stages[2].cnt} sur ${stages[2].max}`,forms:()=>forms.map(f=>f[0]).join(", "),steps:()=>"Fait",checks:()=>"Fait",sign:()=>"Envoyée",after:()=>"Fait"};
+  const sec=s=>{const op=s.unlocked&&(TXO[s.k]!=null?TXO[s.k]:cur&&cur.k===s.k);
+    if(!s.unlocked)return "";
+    if(s.done&&!op)return `<button class="txd-row" data-txo="${s.k}">${icon("check")}<span><b>${s.n}</b><small>${SUM[s.k]()}</small></span><em>Voir</em></button>`;
+    return `<div class="txs ${op?"open":""} ${s.unlocked?"":"locked"} ${s.done?"done":""}" data-txs="${s.k}"><button class="txs-h" data-txo="${s.k}" ${s.unlocked?"":"disabled"}>${icon(s.unlocked?ic[s.k]:"lock")}<span class="txs-t">${s.n}${s.unlocked?"":"<small>Termine l'étape d'avant pour l'ouvrir</small>"}</span>${s.unlocked&&s.max>1?`<span class="txs-n ${s.done?"ok":""}">${s.done?icon("check"):""}${s.cnt}/${s.max}</span>`:s.done?`<span class="txs-n ok">${icon("check")}</span>`:""}${s.unlocked?icon("chev","txs-c"):""}</button>${op?`<div class="txs-b">${body[s.k]}</div>`:""}</div>`};
+  const ring=`<svg class="tx-ring" viewBox="0 0 44 44"><circle cx="22" cy="22" r="19"/><circle cx="22" cy="22" r="19" style="stroke-dasharray:${(119.4*pct).toFixed(1)} 119.4"/></svg>`;
+  el.innerHTML=`<div class="home-head"><h1 class="large">Mes impôts</h1></div>
+    <div class="hscroll tx-years">${[taxYear(),taxYear()-1].map(y=>`<button class="chip ${y===Y?"on":""}" data-ty="${y}">Déclaration ${y+1}<small> · revenus ${y}</small></button>`).join("")}</div>
+    <div class="tool-hero tx-hero"><div class="tx-hk"><span>Ta prochaine étape</span><span class="tx-pc">${ring}<b>${Math.round(pct*100)} %</b></span></div><div class="tx-ht">${esc(nx.t)}</div><div class="th-s">${esc(nx.s)}</div>
+      ${cur?`<button class="tx-go" data-txgo="${cur.k}">C'est parti${icon("chev")}</button>`:""}</div>
+    ${stages.map(sec).join("")}
+    ${(()=>{const rest=stages.filter(x=>!x.unlocked);return rest.length?`<p class="tx-next">${icon("lock")}Ensuite : ${rest.map(x=>x.n.toLowerCase()).join(", ")}.</p>`:""})()}
+    <div class="tx-help"><b>Besoin d'aide ?</b>
+      <a href="tel:0809401401">${icon("phone")}0 809 401 401</a><a href="https://www.impots.gouv.fr/accueil" target="_blank" rel="noopener">${icon("mail")}Messagerie</a><a href="https://www.france-services.gouv.fr" target="_blank" rel="noopener">${icon("users")}France Services</a>
+      <small>Du lundi au vendredi, 8 h 30 à 19 h. France Services t'aide gratuitement, près de chez toi.</small></div>
+    <p class="hint">Zerly t'aide à t'organiser. En cas de doute, c'est impots.gouv.fr qui fait foi. Ce n'est pas un conseil fiscal.</p>`;
+  const rr=()=>TOOL_RENDER.taxes(el);
+  const flip=(o,k)=>{o[k]=!o[k];saveLocal();notifSoon();rr()};
+  const goStage=k=>{for(const x in TXO)TXO[x]=false;TXO[k]=true;rr();setTimeout(()=>{const s=el.querySelector(`[data-txs="${k}"]`);s&&s.scrollIntoView({behavior:"smooth",block:"start"})},60)};
+  const afterDone=prevK=>{const nxt=taxStages(Y).find(x=>!x.done);if(nxt&&nxt.k!==prevK)goStage(nxt.k);else rr()};
+  el.querySelectorAll("[data-txo]").forEach(b=>b.onclick=()=>{const k=b.dataset.txo,s=b.closest(".txs");TXO[k]=!(s&&s.classList.contains("open"));rr()});
+  el.querySelectorAll("[data-ty]").forEach(b=>b.onclick=()=>{el.dataset.ty=b.dataset.ty;for(const k in TXO)delete TXO[k];rr()});
+  el.querySelectorAll("[data-fst]").forEach(b=>b.onclick=()=>{sit.fst=b.dataset.fst;saveLocal();rr()});
+  el.querySelectorAll("[data-sit]").forEach(b=>b.onclick=()=>{const k=b.dataset.sit;sit[k]=!sit[k];b.classList.toggle("on",!!sit[k]);saveLocal()});
+  const so=el.querySelector("#txSitOk");if(so)so.onclick=()=>{st.sitDone=true;save();toast("Ta liste est prête");afterDone("sit")};
+  const dok=el.querySelector("#txDepOk");if(dok)dok.onclick=()=>{st.depOk=true;save();notifSoon();afterDone("dep")};
+  const fok=el.querySelector("#txFormsOk");if(fok)fok.onclick=()=>{st.formsOk=true;save();afterDone("forms")};
+  const dsk=el.querySelector("#txDocSkip");if(dsk)dsk.onclick=()=>{st.docsSkip=true;save();afterDone("docs")};
+  const doneCheck=(k)=>{const was=taxStages(Y).find(x=>x.k===k);return was&&was.done};
+  el.querySelectorAll("[data-txd]").forEach(b=>b.onclick=()=>{flip(st.docs,b.dataset.txd);if(doneCheck("docs"))afterDone("docs")});
+  el.querySelectorAll("[data-txs2]").forEach(b=>b.onclick=()=>{const k=b.dataset.txs2;flip(st.steps,k);
+    if(k==="signer"&&st.steps.signer)setTimeout(()=>sheet(`<div class="confirm"><div class="au-big" style="font-size:34px">🎉</div><h3>Déclaration envoyée !</h3><p>Bravo. Ajoute l'accusé de réception juste en dessous : Zerly le garde pour toi et te prévient quand ton avis d'impôt arrive.</p><button class="primary" data-close>Super</button></div>`),200);
+    if(doneCheck("steps")&&!doneCheck("checks"))afterDone("steps");else if(doneCheck("sign"))afterDone("sign")});
+  el.querySelectorAll("[data-txc]").forEach(b=>b.onclick=()=>{flip(st.checks,b.dataset.txc);if(doneCheck("checks"))afterDone("checks")});
+  el.querySelectorAll("[data-txa]").forEach(b=>b.onclick=()=>flip(st.after,b.dataset.txa));
+  el.querySelectorAll("[data-txf]").forEach(b=>b.onclick=async e=>{e.stopPropagation();const k=b.dataset.txf;
+    if(await taxAttach(Y,k,b.dataset.kind,b.dataset.label)){const tgt=TAX_SIGN.some(x=>x[0]===k)?st.steps:TAX_AFTER.some(x=>x[0]===k)?st.after:st.docs;tgt[k]=true;save();notifSoon();rr()}});
+  el.querySelectorAll("[data-txgo]").forEach(b=>b.onclick=()=>goStage(b.dataset.txgo));
+  const dp=el.querySelector("#txDep");if(dp)dp.onclick=async()=>{const r=await formSheet("Ton département",[{k:"d",label:"Numéro du département",v:(S.profile||{}).dep||"",ph:"Ex : 69, 2A, 974",icon:"home",req:true,hint:"Il sert à trouver ta date limite de déclaration en ligne."}],"Enregistrer");if(!r)return;S.profile.dep=String(r.d).trim().toUpperCase().slice(0,3);save();notifSoon();rr()};
+  hydrateThumbs(el);
+  if(!el.dataset.rl){el.dataset.rl=1;ratesLoad().then(rr)}
 };
+// rappels et notifications des dates d'impôts (déclaration de l'année en cours)
+function taxReminders(){const Y=taxYear(),D=taxDates(Y),st=taxSt(Y),dl=taxDeadline(Y),t=todayISO(),out=[];
+  const signed=!!st.steps.signer,dep=(S.profile||{}).dep,yy=Y+1;
+  const push=(date,tag,title,body)=>out.push({date,tag:"tax:"+Y+":"+tag,title,body});
+  push(addDays(D.ouverture,-14),"prep",`Impôts ${yy} : prépare ta déclaration`,`Elle ouvre le ${longDate(D.ouverture)}. Zerly te dit quels documents rassembler.`);
+  push(D.ouverture,"open",`La déclaration de revenus ${yy} est ouverte`,`Zerly t'accompagne pas à pas : ouvre « Mes impôts ».`);
+  if(!signed){for(const [n,lab] of [[7,"plus qu'une semaine pour déclarer"],[2,"plus que 2 jours pour déclarer"],[0,"dernier jour pour déclarer"]])push(addDays(dl,-n),"dl"+n,`Impôts : ${lab}`,`Date limite ${dep?"pour ton département":"en ligne (départements 01 à 19)"} : ${longDate(dl)}.${dep?"":" Indique ton département dans « Mes impôts » pour avoir la bonne date."}`);
+    push(addDays(D.papier,-3),"papier",`Déclaration papier : date limite le ${longDate(D.papier)}`,`Seulement si tu déclares sur papier. En ligne, tu as jusqu'au ${longDate(dl)}.`)}
+  if(signed){push(D.avis,"avis","Ton avis d'impôt devrait être disponible",`Regarde dans ton espace impots.gouv.fr, et ajoute-le dans « Mes impôts ».`);
+    push(D.taux,"taux","Ton nouveau taux de prélèvement s'applique",`Vérifie-le sur ta prochaine fiche de paie ou dans ton espace impots.gouv.fr.`)}
+  return out.filter(x=>x.date>=addDays(t,-1))}
 
 /* ---------- Verrouillage (Face ID ou code) ---------- */
 const b64=a=>btoa(String.fromCharCode(...new Uint8Array(a))),ub64=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
@@ -6356,7 +6630,7 @@ addEventListener("keydown",e=>{if(e.target.closest&&e.target.closest("input,text
   if(e.key==="Escape"||(e.metaKey&&e.key==="[")||(e.altKey&&e.key==="ArrowLeft")){if(appBack()){e.preventDefault();BACK_SKIP=performance.now()+400}}});
 // trackpad du Mac : glisser à deux doigts vers la droite = retour, la page suit les doigts comme sur iPhone
 (()=>{
-  let g=null,timer=0,quietUntil=0;
+  let g=null,timer=0,quietUntil=0,sideUntil=0;
   const W=()=>innerWidth;
   // une zone qui défile de côté (graphiques, listes horizontales) garde le geste pour elle
   const sideScroll=(t,dx)=>{for(let n=t;n&&n!==document.body;n=n.parentElement){if(!(n instanceof Element))continue;const cs=getComputedStyle(n);if(/(auto|scroll)/.test(cs.overflowX)&&n.scrollWidth>n.clientWidth+1){if(dx<0?n.scrollLeft>0:n.scrollLeft<n.scrollWidth-n.clientWidth-1)return true}}return false};
@@ -6397,9 +6671,11 @@ addEventListener("keydown",e=>{if(e.target.closest&&e.target.closest("input,text
     if(e.ctrlKey)return;                                  // pincement : rien
     const dx=-(e.deltaMode===1?e.deltaX*16:e.deltaX),dy=e.deltaY;  // doigts vers la droite = dx positif
     if(!g){
+      if(performance.now()<sideUntil){sideUntil=performance.now()+420;return}   // la zone de côté termine son mouvement : pas de retour
       if(performance.now()<quietUntil){quietUntil=performance.now()+260;if(Math.abs(e.deltaX)>Math.abs(dy))e.preventDefault();return} // fin d'élan du geste précédent
       if(Math.abs(e.deltaX)<2||Math.abs(e.deltaX)<Math.abs(dy)*1.2)return;
-      if(navAnim||sideScroll(e.target,-dx)||(e.target.closest&&e.target.closest(".noswipe")))return;
+      if(Math.abs(e.deltaX)>=2&&sideScroll(e.target,-dx)){sideUntil=performance.now()+420;return}
+      if(navAnim||(e.target.closest&&e.target.closest(".noswipe")))return;
       const t=target(dx,e.clientX);if(!t)return;
       g={...t,dx:0,q:0,v:0,last:performance.now(),rev:t.k==="drawer"||t.k==="fwd"||t.k==="pfwd"};
       if(t.k==="home"||t.k==="drawer"){drawerGrab();g.base=DRW.q}
@@ -6423,14 +6699,16 @@ const isIOS=()=>/iphone|ipad|ipod/i.test(navigator.userAgent)||(navigator.platfo
 function notifState(){if(!("Notification" in window)||!("serviceWorker" in navigator))return isIOS()&&!isStandalone()?"install":"none";return Notification.permission}
 const notifOn=()=>!!(S.notif&&S.notif.on)&&notifState()==="granted";
 // ce que la personne veut recevoir, et quand
-const NOTIF_TYPES=[["chal","Défis","« Tu n'as pas encore mis tes 1 € de côté »…","flag",1],["wrap","Bilans du mois et de l'année","Le 1er du mois, quand ton bilan est prêt","spark",1],["pay","Prélèvements et abonnements","Avant chaque paiement prévu","repeat",1],["loan","Échéances de prêt","Avant chaque mensualité","bank",1],["inc","Rentrées d'argent","Salaire, remboursements prévus","in",0],["todo","Choses à faire","Sauvegarde, garanties, objectifs…","bell",1],["warn","Alertes","Découvert, dépenses en hausse…","alert",1],["good","Bonnes nouvelles et conseils","Quand tu fais mieux que d'habitude","spark",0]];
+const NOTIF_TYPES=[["chal","Défis","« Tu n'as pas encore mis tes 1 € de côté »…","flag",1],["wrap","Bilans du mois et de l'année","Le 1er du mois, quand ton bilan est prêt","spark",1],["pay","Prélèvements et abonnements","Avant chaque paiement prévu","repeat",1],["loan","Échéances de prêt","Avant chaque mensualité","bank",1],["inc","Rentrées d'argent","Salaire, remboursements prévus","in",0],["todo","Choses à faire","Sauvegarde, garanties, objectifs…","bell",1],["warn","Alertes","Découvert, dépenses en hausse…","alert",1],["tax","Impôts","Ouverture de la déclaration, date limite, avis d'impôt","file",1],["good","Bonnes nouvelles et conseils","Quand tu fais mieux que d'habitude","spark",0]];
 const nset=()=>{const n=S.notif=S.notif||{};n.types=Object.assign(Object.fromEntries(NOTIF_TYPES.map(t=>[t[0],!!t[4]])),n.types||{});if(n.hour==null)n.hour=9;if(n.before==null)n.before=1;return n};
 // ce que Zerly annonce : les rappels du jour (chaque jour tant qu'ils sont là) et la veille de chaque paiement
 function notifQueue(){
   const N=nset(),T=N.types,h=N.hour,bf=N.before,t=todayISO(),end=addDays(t,16),out=[];
   const when=d=>bf===0?"Aujourd'hui":bf===1?"Demain":bf===2?"Après-demain":"Dans "+bf+" jours";
   const wkd=d=>{const x=pd(d).getDay();return x===0||x===6};
-  for(const x of insights().filter(x=>!/^Demain :/.test(x.title)&&!/^wrap/.test(x.k))){const ty=x.lvl==="todo"?"todo":x.lvl==="warn"?"warn":(x.lvl==="good"||x.lvl==="tip")?"good":null;
+  // impôts : ouverture, date limite (selon ton département), avis d'impôt…
+  if(T.tax)for(const r of taxReminders())if(r.date>=t)out.push({date:r.date,hour:h,tag:r.tag,title:r.title,body:r.body});
+  for(const x of insights().filter(x=>!/^Demain :/.test(x.title)&&!/^wrap/.test(x.k)&&!/^tax:/.test(x.k))){const ty=x.lvl==="todo"?"todo":x.lvl==="warn"?"warn":(x.lvl==="good"||x.lvl==="tip")?"good":null;
     if(!ty||!T[ty]||(N.noWeekend&&wkd(t)))continue;out.push({date:t,hour:h,tag:"rm:"+x.k,title:x.title,body:x.text})}
   // défis en cours
   if(T.chal&&can("challenges"))for(const c of (S.challenges||[]).filter(chalActive)){
@@ -6537,7 +6815,7 @@ rebuildTabs(true);setTimeout(updateRemindBadge,0);
 resetForm();
 renderHome();
 renderProfile();
-if(CLOUD_ON&&!S.owner)authShow("login");
+if(CLOUD_ON&&!S.owner&&!DEV_LOCAL)authShow("login");
 showLock();
 onboarding();
 autoRun();
